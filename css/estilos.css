@@ -1,0 +1,1169 @@
+body{ 
+    margin: 0px;
+    padding: 0px;
+    image-resolution: 100%;
+   background-repeat: repeat-y;
+   background-image: url(../imagenes/prueba2.jpg) 
+   
+}
+        /* PAGINA PRINCIPAL */
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.454);
+}
+
+.nombreweb a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.logoweb{
+    position: relative;
+    right: 55px;
+    width: 50px;
+    height: 50px;
+    border: solid 2px white;
+    border-radius: 100px; 
+}
+
+.menulink{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.menulink:hover{
+    background-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.moustros_h1{
+    font-size: 26px;
+    background-color: greenyellow;
+}
+
+.centro_index{
+    display: flex;
+    justify-content: space-between;
+}
+
+.moustros_tabla{
+    margin-left: 50px;
+    margin-top: 180px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    width: 250px;
+    height: 470px;
+    border: ridge 3px white;
+}
+
+
+
+.bienvenida{
+    margin-top: 100px;
+    margin-right: 50px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 250px;
+    height: 720px;
+    border: ridge 4px greenyellow;
+    border-radius: 50px;
+}
+
+.jugarahora{
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.jugarahora a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: ridge 3px yellow;
+    border-radius: 100px;
+}
+
+.jugarahora a:hover{
+    font-size: 33px;
+}
+
+.descarga{
+    position: relative;
+    bottom: 30px;
+    left: 50px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    border: ridge 4px yellowgreen;
+    border-radius: 10px; 
+    padding:7px;   
+}
+
+.descarga:hover{
+    font-size: 31px;
+}
+
+.redes_index{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    position: relative;
+    left: 1175px;
+    margin-left: 10px;
+    padding: 4px;
+    border: solid 3px yellow;
+    border-radius: 100px; 
+}
+
+
+.fin{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+            /* Seccion: REGISTRATE */
+
+.registrate_nombre{
+     padding-top: 10px;
+     font-size: 40px;
+}
+
+.registro_nombres{
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.registro_barras{
+    width: 200px;
+}
+
+.registro_redes{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 620px;
+    bottom: 40px;
+    margin-left: 2px;
+    border: solid 2px red;
+    border-radius: 100px;
+    padding: 5px;
+    background-color: black;
+}
+
+ .registrate_cuadro{
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.477);
+    margin-left: 600px;
+    margin-top: 80px;
+}
+
+.crearcuenta{
+    margin-top: 20px;
+}
+
+
+           /* SECCION: INICIA SESION */
+
+.inicia_sesion_nombre{
+        padding-top: 40px;
+        font-size: 40px;
+}
+
+.inicia_sesion_nombres{
+        position: relative;
+        top: 20px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 25px;
+ }
+
+ .inicia_sesion_barras{
+    margin-top: 20px;
+    width: 200px;
+
+ }
+
+ .inicia_sesion_redes{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: 620px;
+    bottom: 40px;
+    margin-left: 2px;
+    border: solid 2px red;
+    border-radius: 100px;
+    padding: 5px;
+    background-color: black;
+}
+
+.inicia_sesion_cuadro{
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.477);
+    margin-left: 600px;
+    margin-top: 80px;
+}
+
+.inicia_entrar{
+    font-size: 20px;
+    margin-top: 40px;
+    width: 100px;
+}
+
+        /* SECCION: HISTORIAS */
+        
+
+.padre_grid {  display: grid;
+    grid-template-columns: 1 fr 1fr;
+    grid-template-rows: repeat(12,1fr);
+    gap: 4px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "zeus"
+      "hera"
+      "artemisa"
+      "apolo"
+      "atenea"
+      "hefesto"
+      "afrodita"
+      "hades"
+      "poseidon"
+      "ares"
+      "hermes"
+      "dionisio"
+  }
+
+
+
+        /* ZEUS */
+
+
+.historias_zeus{
+    grid-area: zeus;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(0, 255, 255, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.zeus_img{
+    width: 250px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.zeus_p{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.zeus_nombre{
+    color:black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    bottom: 570px;
+    right: 1090px;
+
+}
+
+
+
+            /* HERA */
+
+
+.historias_hera{
+    grid-area: hera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hera_img{
+    width: 250px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hera_p{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.hera_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    bottom: 245px;
+    left: 1120px;
+}
+
+
+
+        /* ARTEMISA */
+
+
+.historias_artemisa{
+    grid-area: artemisa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(0, 255, 255, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.artemisa_img{
+    width: 230px;
+    height: 287px;
+    border: solid 1px white;
+    border-radius: 100px;
+}
+
+.artemisa_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.artemisa_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 692px;
+    left: 290px;
+}
+
+
+
+        /* APOLO */
+
+
+.historias_apolo{
+    grid-area: apolo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.apolo_img{
+    width: 220px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.apolo_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.apolo_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 1020px;
+    left: 1100px;
+}
+
+
+
+        /* ATENEA */
+
+
+.historias_atenea{
+    grid-area: atenea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(0, 255, 255, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.atenea_img{
+    width: 1050px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.atenea_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+.atenea_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 1342px;
+    right: 1070px;
+}
+
+
+
+        /* HEFESTO */
+
+
+.historias_hefesto{
+    grid-area: hefesto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+    
+}
+
+.hefesto_img{
+    width: 230px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hefesto_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+}
+
+.hefesto_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 1665px;
+    left: 1060px;
+}
+
+
+        /* AFRODITA */
+
+
+.historias_afrodita{
+    grid-area: afrodita;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0px 10px 10px;
+    background-color: rgba(0, 255, 255, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+    
+}
+
+.afrodita_img{
+    width: 250px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.afrodita_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.afrodita_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 1985px;
+    right: 1020px;
+
+}
+
+
+
+        /* HADES */
+
+
+.historias_hades{
+    grid-area: hades;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hades_img{
+    width: 230px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hades_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hades_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 2308px;
+    left: 1080px;
+}
+
+
+
+        /* POSEIDON */
+
+
+.historias_poseidon{
+    grid-area: poseidon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background-color: rgba(0, 255, 255, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+    
+}
+
+.poseidon_img{
+    width: 240px;
+    height: 310px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.poseidon_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.poseidon_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 2620px;
+    right: 1020px;
+   
+}
+
+
+
+        /* ARES */
+
+
+.historias_ares{
+    grid-area: ares;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.ares_img{
+    width: 340px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.ares_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ares_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 2952px;
+    left: 1120px;
+}
+
+
+
+        /* HERMES */
+
+
+.historias_hermes{
+    grid-area: hermes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background-color: rgba(0, 255, 255, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hermes_img{
+    width: 1180px;
+    height: 310px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hermes_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.hermes_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 3260px;
+    right: 1010px;
+}
+
+
+
+        /* DIONISIO */
+
+
+.historias_dionisio{
+    grid-area: dionisio;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.dionisio_img{
+    width: 900px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.dionisio_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.dionisio_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 3593px;
+    left: 1040px;
+}
+
+
+            /* REDES_HISTORIAS */
+
+
+.fin_historias{
+        display: flex;
+        margin-top: 70px;
+        justify-content: space-around;
+        color: white;
+        font-size: 20px;
+        background-color: black;
+}
+.redes_historias{
+        text-decoration: none;
+        color: white;
+        background-color: yellowgreen;
+        padding: 10px 5px 5px 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;       
+}
+            
+.descarga_historias{
+        color: white;
+        margin-top: 15px;
+        font-size: 30px;
+        text-decoration: none;  
+}
+            
+
+
+
+
+            /* SECCION DESCARGAS */
+
+
+.descargas_p{
+    color: white;
+    background-color: black;
+    border: ridge 5px yellowgreen;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.descargas_pb{
+    color: white;
+    background-color: black;
+    border: ridge 2px yellowgreen;
+    border-radius: 10px;
+    font-size: 25px;
+    width: 1000px;
+    margin-top: 150px;
+    margin-left: 250px;   
+    padding: 10px;
+}
+
+
+.descargas_p a{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.descarga_padre{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.descarga_img{
+    margin-top: 100px;
+    width: 300px;
+    height: 267px;
+}
+
+.descarga_img:hover{
+    background-color: whitesmoke;
+    border-radius: 30px;
+}
+
+.descarga_r{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descarga_a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color: black;
+    border: ridge 2px red;
+    border-radius: 100px;
+
+}
+
+
+
+
+            /* LISTA DE DROPS */
+
+
+
+                /* LISTA 1 */
+.lista{
+    background-color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+}
+
+.contenedor_lista1{
+        background-color: black;
+        border: solid 2px red;
+        margin: 10px;
+}
+
+.lista1_ul h1{
+    font-size: 30px;
+    color: white;
+}
+
+.lista1_ul li{
+     padding-bottom: 20px;
+     color: white;
+     font-size: 20px;
+}
+
+
+
+                /* LISTA 2 */
+
+
+.contenedor_lista2{
+    background-color: black;
+    border: solid 2px red;
+    margin: 10px;
+}
+
+.lista2_ul h1{
+    color: white;
+    font-size: 30px;
+}
+
+.lista2_ul li{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+            /* LISTA 3 */
+
+.contenedor_lista3{
+    background-color: black;
+    border: solid 2px red;
+    margin: 10px;
+}
+            
+.lista3_ul h1{
+    color: white;
+    font-size: 30px;
+}
+            
+.lista3_ul li{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+            /* LISTA 4 */
+
+
+.contenedor_lista4{
+    background-color: black;
+    border: solid 2px red;
+    margin: 10px;
+}
+            
+.lista4_ul h1{
+    color: white;
+    font-size: 30px;
+}
+            
+.lista4_ul li{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+            /* LISTA 5 */
+
+.contenedor_lista5{
+    background-color: black;
+    border: solid 2px red;
+    margin: 10px;
+}
+            
+.lista5_ul h1{
+    color: white;
+    font-size: 30px;
+}
+            
+.lista5_ul li{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+            /* RANKING */
+
+
+
+ul li a{
+    text-decoration: none;
+}
+
+.ranking_menu{
+    max-width: 900px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.ranking_menu_horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    border: ridge 5px yellowgreen;
+    border-radius: 10px;
+}
+
+.ranking_menu_horizontal li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+}
+
+.ranking_menu_horizontal li:hover{
+    background-color: rgba(255, 255, 0, 0.636);
+}
+
+.ranking_menu_vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ranking_menu_horizontal li:hover .ranking_menu_vertical{
+    display: block;
+}
+
+.ranking_menu_vertical li:hover{
+    background-color: rgba(255, 255, 0, 0.636);
+}
+
+.ranking_menu_vertical li a{
+    display: block;
+    
+}
+
+li .ranking_buscar{
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+            /* CUADROS */
+
+ol li{
+    list-style: none;
+}
+.padre_grid_rank{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "cuadro1 cuadro2 cuadro3";
+}
+
+.ranking_cuadro {
+    grid-area: cuadro1;
+    color: white;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.ranking_cuadro li{
+    text-align: center;
+    padding-bottom: 10px;
+    border: ridge 3px whitesmoke;
+    background-color: black;
+    width: 300px;
+}
+
+            /* CUADRO2 */
+            
+
+.ranking_cuadro2 {
+        grid-area: cuadro2;
+        color: white;
+        font-size: 30px;
+        padding-top: 30px;
+        padding-left: 50px;
+}
+.ranking_cuadro2 li{
+        text-align: center;
+        padding-bottom: 10px;
+        border: ridge 3px whitesmoke;
+        background-color: black;
+        width: 300px;
+}
+
+
+        /* CUADRO3 */
+
+
+
+.ranking_cuadro3 {
+    grid-area: cuadro3;
+    color: white;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.ranking_cuadro3 li{
+    text-align: center;
+    padding-bottom: 10px;
+    border: ridge 3px whitesmoke;
+    background-color: black;
+    width: 300px;
+}
+
+
+            /* REDES RANKING */
+
+            
+
+.fin_rank{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+.redes_rank{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: yellowgreen;
+    padding: 10px 5px 5px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.descarga_rank{
+    color: white;
+    margin-top: 15px;
+    font-size: 30px;
+    text-decoration: none;  
+}
+            /* RESPONSIVE DESING  RANKING */ /* RESPONSIVE DESING  RANKING */
+
+
+@media screen and (max-width: 768px){
+    
+    .padre_grid_rank{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "cuadro1 cuadro2"
+        "cuadro3 cuadro3";
+    }
+
+    .ranking_cuadro{
+        position: relative;
+        right: 25px;
+        bottom: 20px;
+    }
+
+    .ranking_cuadro2{
+        position: relative;
+        right: 45px;
+        bottom: 20px;
+    }
+
+    .ranking_cuadro3{
+        position: relative;
+        left: 60px;
+        bottom: 55px;
+    }
+
+    .fin_rank{
+        position: absolute;
+        width: 100%;
+        top: 1360px;
+    }
+  
+    .nombreweb{
+        text-align: center;
+    }
+
+    .logoweb{
+        left: 0px;
+    }
+
+    .menulink{
+        text-align: center;
+    }
+
+
+}
+

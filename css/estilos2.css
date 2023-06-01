@@ -1,0 +1,138 @@
+body{  
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../imagenes/prueba2.jpg);
+    font-family: serif
+}
+        /* PAGINA PRINCIPAL */
+.menu{
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+.nombre{
+    color: white;
+    height: 60px;
+}
+
+.icono{
+    position: relative;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.menu_link{
+    color: white;
+    display: flex;
+    margin-top: 10px;
+    padding: 4px 5px 0px 5px ;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu_link a:hover{
+    background-color: red;
+    margin-bottom: 15px;
+    border: solid 2px black;
+    border-radius: 50px;
+    
+}
+                /* MEDIO */ /* MEDIO */
+
+
+.padre_medio_izq{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.nombre_moustros{
+    font-size: 28px;
+    margin-top: 20px;
+    background-color: greenyellow;
+}
+
+.info_medio_moustro{
+    color: white;
+    background-color: black;
+    margin-top: 88px;
+    width: 250px;
+    height: 470px;
+    margin-left: 50px;
+    text-align: center;
+    border: ridge 3px whitesmoke;
+    
+}
+
+
+.info_medio{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.info_medio a{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    margin-bottom: 50px;
+    font-size: 30px;
+    border: ridge 3px yellowgreen;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.info_medio_derecha{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.derecha_p{
+    color: white;
+    background-color: black;
+    border: ridge 5px yellowgreen;
+    border-radius: 50px;
+    width: 260px;
+    font-size: 20px;
+}
+
+
+.menu_final{
+    display: flex;
+}
+
+.descarga{
+    color: white;
+    background-color: black;
+    position: relative;
+    bottom: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    border: ridge 4px yellowgreen;
+    border-radius: 10px;
+    padding: 7px;
+    
+}
+
+.redes{
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 4px;
+    border: solid 3px yellowgreen;
+    border-radius: 100px;
+}
