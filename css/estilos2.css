@@ -14,8 +14,7 @@ body{
     height: 60px;
 }
 
-.icono{
-    position: relative;
+.menu_img{
     right: 40px;
     width: 50px;
     height: 50px;
@@ -40,7 +39,8 @@ body{
     border-radius: 50px;
     
 }
-                /* MEDIO */ /* MEDIO */
+                /* CONTENIDO MEDIO */ /* CONTENIDO MEDIO */
+
 
 
 .padre_medio_izq{
@@ -68,13 +68,13 @@ body{
 }
 
 
-.info_medio{
+.link_medio{
     display: flex;
     justify-content: center;
     align-items: end;
 }
 
-.info_medio a{
+.link_medio a{
     color: white;
     background-color: black;
     text-decoration: none;
@@ -83,6 +83,11 @@ body{
     border: ridge 3px yellowgreen;
     padding: 5px;
     border-radius: 100px;
+}
+
+.link_medio a:hover {
+    color: black;
+    background-color: whitesmoke;
 }
 
 .info_medio_derecha{
@@ -102,18 +107,13 @@ body{
     font-size: 20px;
 }
 
-
-.menu_final{
-    display: flex;
-}
-
 .descarga{
     color: white;
     background-color: black;
     position: relative;
     bottom: 5px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 28px;
     border: ridge 4px yellowgreen;
     border-radius: 10px;
     padding: 7px;
@@ -136,3 +136,320 @@ body{
     border: solid 3px yellowgreen;
     border-radius: 100px;
 }
+
+
+@media screen and (max-width:1111px){
+    .link_medio a{
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width:1051px){
+    .nombre{
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+    }
+
+    .menu_link{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width:943px){
+    .link_medio a{
+        font-size: 20px;
+    }
+
+    .descarga{
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width:818px){
+    .link_medio a{
+      font-size: 15px;
+    }
+
+    .link_medio{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .menu_link{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .contenedor_medio{
+        display: flex;
+    }
+
+    .info_medio_derecha{
+        order: -1;
+    }
+
+    .info_medio_moustro{
+        margin-right: 20px;
+    }
+
+    .link_medio{
+        width: 430px;
+        justify-content: end;
+    }
+
+    .descarga{
+        position: relative;
+        bottom: 37px;
+        left: 10px;
+        font-size: 20px;
+    }
+
+    .redes_index{
+        position: relative;
+        bottom: 42px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:645px){
+    .info_medio_derecha{
+        display: flex;
+        justify-content: end;
+        width: 450px;
+        
+    }  
+}
+
+
+
+
+            /* ESTILOS RANKING */ /* ESTILOS RANKING */
+
+
+
+.ranking_menu{
+    max-width: 900px;
+    background-color: black;
+    margin: auto;
+    margin-top: 50px;
+    border: ridge 4px greenyellow;
+    border-radius: 40px;
+    
+}
+
+.ranking_menu_horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ranking_menu_horizontal li a{
+    display: block;
+    color: white;
+    padding: 18px 20px 0px 20px;
+}
+
+.ranking_menu_horizontal li:hover .ranking_menu_vertical{
+    display: block;
+}
+
+.ranking_menu_vertical{
+    list-style: none;
+    position: absolute;
+    display: none;
+}
+
+.ranking_menu_vertical li a{
+    background-color: rgba(0, 0, 0, 0.474);
+    text-align: center;
+    display: block;
+    width: 150px;
+    height: auto;
+    margin-bottom:2px;
+    border: ridge 2px black;
+    border-radius: 30px;
+}
+
+.ranking_menu_vertical li a:hover{
+    background-color: red;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.ranking_buscar{
+    margin-top: 14px;
+}
+
+
+
+/* CUADROS  Y REDES*/ /* CUADROS Y REDES */ /* CUADROS Y REDES */
+
+
+
+.padre_medio{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    margin-top: 90px;
+}
+
+.ranking_cuadro{
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.ranking_cuadro li{
+    background-color: whitesmoke;
+    border: ridge 5px black;
+}
+
+.ranking_cuadro2{
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+.ranking_cuadro2 li{
+    background-color: whitesmoke;
+    border: ridge 5px black;
+}
+
+.ranking_cuadro3{
+    text-align: center;
+    font-size: 30px;
+    list-style:none;
+    margin-right: 20px;
+}
+
+.ranking_cuadro3 li{
+    border: ridge 5px black;
+    background-color: whitesmoke;
+}
+
+
+/* REDES */
+
+
+
+.final{
+    height:80px;  
+    
+}
+
+.redes_padre{
+    display: flex;
+    justify-content: end;
+}
+
+.redes_hijo{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    margin: 15px 20px 25px 0px;
+    padding: 1px 5px;
+    font-size: 20px;
+    border: ridge 2px red;
+    border-radius: 20px;
+}
+
+
+.descarga_padre{
+    margin-top: 20px;
+}
+
+.descarga_hijo{
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border: ridge 5px red;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-left: 18px;
+    
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .padre_medio{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .ranking_cuadro{
+        margin-right: 50px;
+        width: 400px;
+    }
+
+    .ranking_cuadro2{
+        margin-right: 50px;
+        width: 400px;
+    }
+
+    .ranking_cuadro3{
+        width: 400px;
+        margin-right: 50px;
+    }
+    
+    .final{
+        position: relative;
+        top: 550px;
+    }
+}
+
+
+@media screen and (max-width:900px){
+
+    .descarga_hijo{
+        font-size: 20px;
+        position: relative;
+        top: 10px;
+        right: 15px;
+    }
+
+    .redes_hijo{
+        font-size: 20px;
+        position: relative;
+        top: 10px;
+        left: 20px;
+        padding-top: 2px;
+        height: 40px;
+    }
+        
+    .ranking_cuadro{
+        width: 350px;
+    }
+
+    .ranking_cuadro2{
+        width: 350px;
+    }
+
+    .ranking_cuadro3{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .ranking_cuadro{
+        width: 330px;
+    }
+    .ranking_cuadro2{
+        width: 330px;
+    }
+    .ranking_cuadro3{
+        width: 330px;
+    }
+}
+
+
+
+
