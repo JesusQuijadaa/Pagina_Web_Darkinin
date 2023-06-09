@@ -4,12 +4,14 @@ body{
     background-image: url(../imagenes/prueba2.jpg);
     font-family: serif
 }
+
+
         /* PAGINA PRINCIPAL */
 .menu{
     background-color: rgba(0, 0, 0, 0.452);
 }
 
-.nombre{
+.nombre_pagina{
     color: white;
     height: 60px;
 }
@@ -25,6 +27,7 @@ body{
 .menu_link{
     color: white;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
     padding: 4px 5px 0px 5px ;
     justify-content: space-around;
@@ -43,7 +46,7 @@ body{
 
 
 
-.padre_medio_izq{
+.padre_medio_izq_index{
     display: flex;
     justify-content: space-between;
     margin-top: 90px;
@@ -55,26 +58,26 @@ body{
     background-color: greenyellow;
 }
 
-.info_medio_moustro{
+.cuadro_moustro_index{
     color: white;
     background-color: black;
     margin-top: 88px;
     width: 250px;
     height: 470px;
-    margin-left: 50px;
+    margin-left: 40px;
     text-align: center;
     border: ridge 3px whitesmoke;
     
 }
 
 
-.link_medio{
+.jugar_ahora{
     display: flex;
     justify-content: center;
     align-items: end;
 }
 
-.link_medio a{
+.jugar_ahora a{
     color: white;
     background-color: black;
     text-decoration: none;
@@ -85,12 +88,12 @@ body{
     border-radius: 100px;
 }
 
-.link_medio a:hover {
+.jugar_ahora a:hover {
     color: black;
     background-color: whitesmoke;
 }
 
-.info_medio_derecha{
+.bienvenida_index{
     display: flex;
     justify-content: center;
     width: 300px;
@@ -98,7 +101,7 @@ body{
     text-align: center;
 }
 
-.derecha_p{
+.bienvenida_p{
     color: white;
     background-color: black;
     border: ridge 5px yellowgreen;
@@ -107,47 +110,58 @@ body{
     font-size: 20px;
 }
 
-.descarga{
-    color: white;
-    background-color: black;
-    position: relative;
-    bottom: 5px;
-    text-decoration: none;
-    font-size: 28px;
-    border: ridge 4px yellowgreen;
-    border-radius: 10px;
-    padding: 7px;
-    
-}
-
-.redes{
+.redes_padre{
     display: flex;
-    justify-content: end;
-    font-size: 20px;
+    justify-content:end;
+    padding-top: 10px;
 }
 
-.redes a{
-    text-decoration: none;
+.instagram{
+    margin-right: 20px;
+    width: 50px;
+    height: 60px;
+    color: red;
+}
+.tiktok{
+    margin-right: 70px;
+    width: 45px;
+    height: 45px; 
+}
+ .facebook{
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    color: blue;
+    background-color: white;
+    border-radius: 50px;
+ }
+
+ .descarga_padre{
+    margin-top: 20px;
+}
+
+.descarga_hijo{
+    font-size: 25px;
     color: white;
     background-color: black;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    padding: 4px;
-    border: solid 3px yellowgreen;
-    border-radius: 100px;
+    text-decoration: none;
+    border: ridge 5px red;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-left: 18px;
 }
 
-
-
-@media screen and (max-width:1111px){
-    .link_medio a{
+ 
+ @media screen and (max-width:1111px){
+    .jugar_ahora a{
         font-size: 25px;
     }
 }
 
-
 @media screen and (max-width:1051px){
-    .nombre{
+
+    .nombre_pagina{
+        height: 40px;
         display: flex;
         justify-content: center;
         width: 100%;  
@@ -160,72 +174,267 @@ body{
 }
 
 
-@media screen and (max-width:943px){
-    .link_medio a{
-        font-size: 20px;
+@media screen and (max-width: 943px){
+    .jugar_ahora a{
+        font-size: 23px;
     }
 
-    .descarga{
+    .nombre_moustros{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    
+    h2{
         font-size: 25px;
     }
 
-}
-
-@media screen and (max-width:818px){
-    .link_medio a{
-      font-size: 15px;
+    .cuadro_moustro_index{
+        font-size: 10px;
+        margin-top: 120px;
+        width: 240px;
+        height: 390px;
+        margin-left: 50px;
     }
-
-    .link_medio{
-        align-items: center;
-    }
-}
-
-@media screen and (max-width:768px){
-
-    .menu_link{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .contenedor_medio{
-        display: flex;
-    }
-
-    .info_medio_derecha{
-        order: -1;
-    }
-
-    .info_medio_moustro{
-        margin-right: 20px;
-    }
-
-    .link_medio{
-        width: 430px;
-        justify-content: end;
-    }
-
-    .descarga{
-        position: relative;
-        bottom: 37px;
-        left: 10px;
+    .descarga_hijo{
         font-size: 20px;
     }
 
-    .redes_index{
-        position: relative;
-        bottom: 42px;
+
+    .bienvenida_p{
+        border-radius: 30px;
+        width: 230px;
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 871px){
+    .jugar_ahora a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 818px){
+    .jugar_ahora a{
         font-size: 15px;
     }
 }
 
-@media screen and (max-width:645px){
-    .info_medio_derecha{
-        display: flex;
-        justify-content: end;
-        width: 450px;
+
+@media screen and (max-width:768px){
+    
+    .menu_img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .jugar_ahora a{
+        font-size: 17px;
+    }
+
+    .cuadro_moustro_index{
+        margin-left: 20px;
         
-    }  
+    }
+    .descarga_hijo{
+        font-size: 20px;
+    }
+
+    .bienvenida_index{
+        margin-right: 0px;
+    }
+
+    .bienvenida_p{
+        font-size: 20px;
+        padding: 2px;
+    }
+
+    .redes_padre{
+        display: flex;
+        justify-content:end;
+        padding-top: 10px;
+    }
+    
+    .instagram{
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        color: red;
+    }
+    .tiktok{
+        margin-right: 45px;
+        width: 40px;
+        height: 40px; 
+    }
+     .facebook{
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        color: blue;
+        background-color: white;
+        border-radius: 50px;
+     }
+
+     
 }
+
+
+
+
+@media screen and (max-width:426px){
+
+    .nombre_pagina{
+        height: 30px;
+    }
+    
+    .menu_img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .menu_link{
+        font-size: 15px;
+    }
+    
+    .padre_medio_izq_index{
+        margin-top: 60px;
+        margin-right: 5px;
+    }
+    
+    .nombre_moustros{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    
+    h2{
+        display: inline;
+        padding-left: 40px;
+        padding-right: 30px;
+    }
+
+    .cuadro_moustro_index{
+        margin-top: 80px;
+        width: 411px;
+        height: 200px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    
+    
+    .jugar_ahora a{
+        position: absolute;
+        top: 460px;
+        left: 170px;
+        font-size: 15px;
+    }
+
+
+    .bienvenida_index{
+        order: -1;
+        width: 580px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    
+    .bienvenida_p{
+        width: 580px;
+        height: 250px;
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    .descarga_padre{
+        margin-top: 30px;
+        order: 1;
+    }
+    
+    .descarga_hijo{
+        margin-left: 80px;
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+
+    .redes_padre{
+        margin-bottom: 20px;
+    }
+
+    .instagram{
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        color: red;
+    }
+    .tiktok{
+        margin-right: 10px;
+        width: 30px;
+        height: 30px; 
+    }
+     .facebook{
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        color: blue;
+        background-color: white;
+        border-radius: 50px;
+     }
+}
+
+
+@media screen and (max-width:376px){
+    
+    .bienvenida_p{
+        width: 580px;
+        height: 285px;
+    }
+    
+    .jugar_ahora a{
+        position: absolute;
+        top: 500px;
+        left: 145px;
+    }
+    
+    h2{
+        padding-left: 30px;
+        padding-right: 25px;
+    }
+    
+    .descarga_hijo{
+        margin-left: 60px;
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+}
+
+
+@media screen and (max-width:321px){
+
+    .bienvenida_p{
+        height: 355px;
+    }
+    
+    .jugar_ahora a{
+        position: absolute;
+        top: 560px;
+        left: 120px;
+    }
+    
+    h2{
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    
+    .descarga_hijo{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    
+}
+
+
+
+
+
 
 
 
@@ -291,13 +500,13 @@ ul li a{
 
 
 
-/* CUADROS  Y REDES*/ /* CUADROS Y REDES */ /* CUADROS Y REDES */
+/* CUADROS */ /* CUADROS */ /* CUADROS */
 
 
 
-.padre_medio{
+.padre_medio_ranking{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     height: 600px;
     margin-top: 90px;
 }
@@ -313,57 +522,43 @@ ul li a{
     border: ridge 5px black;
 }
 
-.ranking_cuadro2{
-    list-style: none;
-    text-align: center;
-    font-size: 30px;
+.padre_cambio_de_pagina{
+    display: flex;
+    justify-content: center;
 }
 
-.ranking_cuadro2 li{
-    background-color: whitesmoke;
-    border: ridge 5px black;
+.cambio_de_pagina{
+    display: flex;
+    border: solid 1px black;
+    border-radius: 5px;
 }
 
-.ranking_cuadro3{
-    text-align: center;
-    font-size: 30px;
-    list-style:none;
-    margin-right: 20px;
-}
-
-.ranking_cuadro3 li{
-    border: ridge 5px black;
-    background-color: whitesmoke;
-}
-
-
-/* REDES */
-
-
-
-.final{
-    height:80px;  
+.pagina_link{
+    color: black;
+    background-color: red;
+    padding: 6px 13px;
+    border-radius: 5px;
     
 }
 
-.redes_padre{
+.redes_padre_ranking{
     display: flex;
     justify-content:end;
     padding-top: 10px;
 }
 
-.instagram{
+.instagram_ranking{
     margin-right: 20px;
     width: 50px;
     height: 60px;
     color: red;
 }
-.tiktok{
+.tiktok_ranking{
     margin-right: 70px;
     width: 45px;
     height: 45px; 
 }
- .facebook{
+ .facebook_ranking{
     margin-right: 20px;
     width: 50px;
     height: 50px;
@@ -372,12 +567,11 @@ ul li a{
     border-radius: 50px;
  }
 
-
-.descarga_padre{
+ .descarga_padre_ranking{
     margin-top: 20px;
 }
 
-.descarga_hijo{
+.descarga_hijo_ranking{
     font-size: 25px;
     color: white;
     background-color: black;
@@ -386,81 +580,37 @@ ul li a{
     border-radius: 20px;
     padding: 10px 10px;
     margin-left: 18px;
-    
 }
 
 
-@media screen and (max-width:1200px) {
-
-    .padre_medio{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .ranking_cuadro{
-        margin-right: 50px;
-        width: 400px;
-    }
-
-    .ranking_cuadro2{
-        margin-right: 50px;
-        width: 400px;
-    }
-
-    .ranking_cuadro3{
-        width: 400px;
-        margin-right: 50px;
-    }
+@media screen and (max-width:1024px){
     
-    .final{
-        position: relative;
-        top: 550px;
-    }
-}
-
-
-@media screen and (max-width:900px){
-
-    .descarga_hijo{
-        font-size: 20px;
-        position: relative;
-        top: 10px;
-        right: 15px;
-    }
-
-    .redes_hijo{
-        font-size: 20px;
-        position: relative;
-        top: 10px;
-        left: 20px;
-        padding-top: 2px;
+    .instagram_ranking{
+        margin-right: 20px;
+        width: 40px;
         height: 40px;
-    }
         
-    .ranking_cuadro{
-        width: 350px;
+    }
+    
+    .tiktok_ranking{
+        margin-right: 40px;
+        width: 40px;
+        height: 40px; 
     }
 
-    .ranking_cuadro2{
-        width: 350px;
-    }
+     .facebook_ranking{
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+     }
 
-    .ranking_cuadro3{
-        width: 350px;
+     .descarga_padre_ranking{
+        margin-top: 20px;
     }
+    
+    .descarga_hijo_ranking{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    
 }
-
-@media screen and (max-width:800px){
-    .ranking_cuadro{
-        width: 330px;
-    }
-    .ranking_cuadro2{
-        width: 330px;
-    }
-    .ranking_cuadro3{
-        width: 330px;
-    }
-}
-
-
-
-

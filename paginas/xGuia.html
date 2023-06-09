@@ -152,91 +152,76 @@
 
 
 
-                        <!-- Menu con BS  -->
+pagina2 bootstrap
 
+@media screen and (max-width:1200px) {
 
+    .padre_medio{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .ranking_cuadro{
+        margin-right: 50px;
+        width: 400px;
+    }
 
-                        <nav class="navbar navbar-expand-lg">
+    .ranking_cuadro2{
+        margin-right: 50px;
+        width: 400px;
+    }
+
+    .ranking_cuadro3{
+        width: 400px;
+        margin-right: 50px;
+    }
     
-                            <a class="nombre_web" href="#">Darkinin Mobile</a>
-                            <button class="menu_hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#menu_horizontali" aria-controls="menu_horizontali" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="menu_horizontal" id="menu_horizontali">
-                              <ul class="ul_link">                      
-                                <li class="li_link">
-                                  <a class="a_link" href="#">Campeones</a>
-                                </li>
-                                <li class="li_link">
-                                  <a class="a_link" href="#">Ranking</a>
-                                </li>
-                                <li class="li_link">
-                                  <a class="a_link" href="#">Lista de Drops</a>
-                                </li>
-                                <li class="li_link">
-                                  <a class="a_link" href="#">Descargas</a>
-                                </li>
-                                <li class="li_link">
-                                  <a class="a_link" href="#">Historias</a>
-                                </li>
-                                <li class="li_link">
-                                  <a class="a_link" href="#">Registrate</a>
-                                </li>
-                                <li class="li_link">
-                                  <a class="a_link" href="#">Inicia Sesion                                   </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </nav>
-
-
-
-                        <!-- Estilos de menu con bs -->
-
-
-                        
-.ul_link{
-    display:flex;
-    justify-content: space-around;
-    margin-top: 15px;
-    width:100%;
-    list-style: none;
+    .final{
+        position: relative;
+        top: 550px;
+    }
 }
 
-.a_link{
-    color: white;
-    display: flex;
-    margin-left: 10px;
-    text-decoration: none;
-    
-}
 
-.menu_hamburguesa{
-    padding: 5px 10px;
-}
+@media screen and (max-width:900px){
 
-@media screen and (min-width:992px){
-    .menu_hamburguesa{
-     display: none;
-    }  
-   
+    .descarga_hijo{
+        font-size: 20px;
+        position: relative;
+        top: 10px;
+        right: 15px;
+    }
+
+    .redes_hijo{
+        font-size: 20px;
+        position: relative;
+        top: 10px;
+        left: 20px;
+        padding-top: 2px;
+        height: 40px;
+    }
+        
+    .ranking_cuadro{
+        width: 350px;
+    }
+
+    .ranking_cuadro2{
+        width: 350px;
+    }
+
+    .ranking_cuadro3{
+        width: 350px;
+    }
 }
 
 @media screen and (max-width:800px){
-    .ul_link{
-        display:inline-block;
-        background-color: pink;
-        width:250px;
-        color: black;
+    .ranking_cuadro{
+        width: 330px;
     }
-    .a_link{
-        display: flex;
-        justify-content: center;
+    .ranking_cuadro2{
+        width: 330px;
     }
-
-    .li_link{
-        padding-right: 40px;
+    .ranking_cuadro3{
+        width: 330px;
     }
 }
 
@@ -254,36 +239,61 @@
 
 
 
+<div class="ranking_cuadro3 col-md-3">
+    <ol class="ranking_cuadro2">
+    <li>St Cream 2</li>
+    <li>ErchiLC</li>
+    <li>Natzue</li>
+    <li>Pyke</li>
+    <li>Demons</li>
+    <li>Bons</li>
+    <li>Thunder</li>
+    <li>Dragons</li>
+    <li>Topson</li>
+    <li>Imagine</li>
+  </ol>
+</div>
 
-.menu_horizontal{
-    background-color: rgba(0, 0, 0, 0.462);
-    display: flex;
-    justify-content: space-evenly;
-    width: 720px;
-    margin-left: 50px;
-    
-}
-.nombre_web{
-    color: white;
+
+
+<div class="ranking_cuadro3 col-md-3">
+    <ol class="ranking_cuadro3">
+      <li>St Cream 3</li>
+      <li>ErchiLC</li>
+      <li>Natzue</li>
+      <li>Pyke</li>
+      <li>Demons</li>
+      <li>Bons</li>
+      <li>Thunder</li>
+      <li>Dragons</li>
+      <li>Topson</li>
+      <li>Imagine</li>
+    </ol>
+  </div>
+
+
+
+  <!-- css de ranking cuadros 2 y 3 -->
+
+  .ranking_cuadro2{
+    list-style: none;
+    text-align: center;
     font-size: 30px;
-    margin-left: 10px;
-    text-decoration: none;
-    
 }
 
-.menu_img{
-    margin-left: 10px;
-    width: 50px;
-    height: 50px;
-    border: solid 2px white;
-    border-radius: 100px;
+.ranking_cuadro2 li{
+    background-color: whitesmoke;
+    border: ridge 5px black;
 }
 
+.ranking_cuadro3{
+    text-align: center;
+    font-size: 30px;
+    list-style:none;
+    margin-right: 20px;
+}
 
-
-
-
-
-
-
-
+.ranking_cuadro3 li{
+    border: ridge 5px black;
+    background-color: whitesmoke;
+}
