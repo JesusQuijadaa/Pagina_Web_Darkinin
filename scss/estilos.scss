@@ -1,0 +1,1364 @@
+body{  
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../imagenes/prueba2.jpg);
+    font-family: serif
+}
+
+
+        /* PAGINA PRINCIPAL */
+
+.menu{
+     background-color: rgba(0, 0, 0, 0.452);
+}
+        
+.menu_img{
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border: solid 2px white;
+    border-radius: 100px;
+        }
+        
+.menu_link{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 4px 5px 0px 5px ;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 20px;
+    & a:hover{
+        background-color: red;
+        margin-bottom: 15px;
+        border: solid 2px black;
+        border-radius: 50px;
+    }
+    
+}
+
+.padre_medio_izq_index{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.nombre_moustros{
+    font-size: 28px;
+    margin-top: 20px;
+    background-color: greenyellow;
+}
+
+.cuadro_moustro_index{
+    color: white;
+    background-color: black;
+    margin-top: 88px;
+    width: 250px;
+    height: 470px;
+    margin-left: 40px;
+    text-align: center;
+    border: ridge 3px whitesmoke;
+    
+}
+
+.jugar_ahora{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    a{
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        margin-bottom: 50px;
+        font-size: 30px;
+        border: ridge 3px yellowgreen;
+        padding: 5px;
+        border-radius: 100px;
+        &:hover {
+            color: black;
+            background-color: whitesmoke;
+        }
+    }
+}
+
+.bienvenida_index{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.bienvenida_p{
+    color: white;
+    background-color: black;
+    border: ridge 5px yellowgreen;
+    border-radius: 50px;
+    width: 260px;
+    font-size: 20px;
+}
+
+.redes_padre{
+    display: flex;
+    justify-content:end;
+    padding-top: 10px;
+}
+
+.instagram{
+    margin-right: 20px;
+    width: 50px;
+    height: 60px;
+    color: red;
+}
+.tiktok{
+    margin-right: 70px;
+    width: 45px;
+    height: 45px; 
+}
+ .facebook{
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    color: blue;
+    background-color: white;
+    border-radius: 50px;
+ }
+
+ .descarga_padre{
+    margin-top: 20px;
+}
+
+.descarga_hijo{
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border: ridge 5px red;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-left: 18px;
+}
+
+@media screen and (max-width:1111px){
+    .jugar_ahora a{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:1051px){
+
+    .nombre_pagina{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+    }
+
+    .menu_link{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 943px){
+    .jugar_ahora a{
+        font-size: 23px;
+    }
+
+    .nombre_moustros{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+
+    .cuadro_moustro_index{
+        font-size: 10px;
+        margin-top: 120px;
+        width: 240px;
+        height: 390px;
+        margin-left: 50px;
+    }
+    .descarga_hijo{
+        font-size: 20px;
+    }
+
+
+    .bienvenida_p{
+        border-radius: 30px;
+        width: 230px;
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 871px){
+    .jugar_ahora a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 818px){
+    .jugar_ahora a{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    
+    .menu_img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .jugar_ahora a{
+        font-size: 17px;
+    }
+
+    .cuadro_moustro_index{
+        margin-left: 20px;
+        
+    }
+    .descarga_hijo{
+        font-size: 20px;
+    }
+
+    .bienvenida_index{
+        margin-right: 0px;
+    }
+
+    .bienvenida_p{
+        font-size: 20px;
+        padding: 2px;
+    }
+
+    .redes_padre{
+        display: flex;
+        justify-content:end;
+        padding-top: 10px;
+    }
+    
+    .instagram{
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        color: red;
+    }
+    .tiktok{
+        margin-right: 45px;
+        width: 40px;
+        height: 40px; 
+    }
+     .facebook{
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        color: blue;
+        background-color: white;
+        border-radius: 50px;
+     }
+
+     
+}
+
+
+
+
+@media screen and (max-width:426px){
+
+    .nombre_pagina{
+        height: 30px;
+    }
+    
+    .menu_img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .menu_link{
+        font-size: 15px;
+    }
+    
+    .padre_medio_izq_index{
+        margin-top: 60px;
+        margin-right: 5px;
+    }
+    
+    .nombre_moustros{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    
+    h2{
+        display: inline;
+        padding-left: 40px;
+        padding-right: 30px;
+    }
+
+    .cuadro_moustro_index{
+        margin-top: 80px;
+        width: 411px;
+        height: 200px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    
+    
+    .jugar_ahora a{
+        position: absolute;
+        top: 460px;
+        left: 170px;
+        font-size: 15px;
+    }
+
+
+    .bienvenida_index{
+        order: -1;
+        width: 580px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    
+    .bienvenida_p{
+        width: 580px;
+        height: 250px;
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    .descarga_padre{
+        margin-top: 30px;
+        order: 1;
+    }
+    
+    .descarga_hijo{
+        margin-left: 80px;
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+
+    .redes_padre{
+        margin-bottom: 20px;
+    }
+
+    .instagram{
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        color: red;
+    }
+    .tiktok{
+        margin-right: 10px;
+        width: 30px;
+        height: 30px; 
+    }
+     .facebook{
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        color: blue;
+        background-color: white;
+        border-radius: 50px;
+     }
+}
+
+
+@media screen and (max-width:376px){
+    
+    .bienvenida_p{
+        width: 580px;
+        height: 285px;
+    }
+    
+    .jugar_ahora a{
+        position: absolute;
+        top: 500px;
+        left: 145px;
+    }
+    
+    h2{
+        padding-left: 30px;
+        padding-right: 25px;
+    }
+    
+    .descarga_hijo{
+        margin-left: 60px;
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+}
+
+
+@media screen and (max-width:321px){
+
+    .bienvenida_p{
+        height: 355px;
+    }
+    
+    .jugar_ahora a{
+        position: absolute;
+        top: 560px;
+        left: 120px;
+    }
+    
+    h2{
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    
+    .descarga_hijo{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    
+}
+
+
+
+
+            /* SECTOR RANKING */ /* SECTOR RANKING */
+    
+
+.ranking_menu{
+        max-width: 900px;
+        background-color: black;
+        margin: auto;
+        margin-top: 50px;
+        border: ridge 4px greenyellow;
+        border-radius: 10px;
+                
+}
+            
+.ranking_menu_horizontal{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        li a{
+            display: block;
+            color: white;
+            padding: 18px 20px 0px 20px;
+            }
+            & li:hover .ranking_menu_vertical{
+                    display: block;
+                }
+            }
+
+            
+            
+.ranking_menu_vertical{
+        list-style: none;
+        position: absolute;
+        display: none;
+        li a{
+            background-color: rgba(0, 0, 0, 0.474);
+            text-align: center;
+            display: block;
+            width: 130px;
+            height: 40px;
+            margin-bottom:2px;
+            padding-bottom: 10px;
+            border: ridge 2px black;
+            border-radius: 30px;     
+            }
+            & li:hover{
+                background-color: red;
+                border-radius: 20px;
+            }  
+}
+
+.ranking_buscar{
+    margin-top: 14px;
+} 
+
+ul li a{
+    text-decoration: none;
+}
+
+
+/* CUADROS */ /* CUADROS */ /* CUADROS */
+
+
+.padre_medio_ranking{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    margin-top: 90px;
+}
+
+.ranking_cuadro{
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+    li{
+        background-color: whitesmoke;
+        border: ridge 5px black;
+    }
+}
+
+.padre_cambio_de_pagina{
+    display: flex;
+    justify-content: center;
+}
+
+.cambio_de_pagina{
+    display: flex;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.pagina_link{
+    color: black;
+    background-color: red;
+    padding: 6px 13px;
+    border-radius: 5px;
+    
+}
+
+.redes_padre_ranking{
+    display: flex;
+    justify-content:end;
+    padding-top: 10px;
+}
+
+.instagram_ranking{
+    margin-right: 20px;
+    width: 50px;
+    height: 60px;
+    color: red;
+}
+.tiktok_ranking{
+    margin-right: 70px;
+    width: 45px;
+    height: 45px; 
+}
+ .facebook_ranking{
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    color: blue;
+    background-color: white;
+    border-radius: 50px;
+ }
+
+.descarga_padre_ranking{
+    margin-top: 20px;
+}
+
+.descarga_hijo_ranking{
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border: ridge 5px red;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-left: 18px;
+}
+
+@media screen and (max-width:1024px){
+    
+    .instagram_ranking{
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        
+    }
+    
+    .tiktok_ranking{
+        margin-right: 40px;
+        width: 40px;
+        height: 40px; 
+    }
+
+     .facebook_ranking{
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+     }
+
+     .descarga_padre_ranking{
+        margin-top: 20px;
+    }
+    
+    .descarga_hijo_ranking{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    
+}
+
+
+         /* SECTOR LISTA DE DROPS */ /* SECTOR LISTA DE DROPS */
+
+        /* LISTA 1 */
+
+.lista{
+    background-color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+}
+        
+.contenedor_lista1{
+    background-color: black;
+    border: solid 2px red;
+    margin: 10px;
+}
+        
+.lista1_ul h1{
+    font-size: 30px;
+    color: white;
+}
+        
+.lista1_ul li{
+             padding-bottom: 20px;
+             color: white;
+             font-size: 20px;
+}
+
+
+        /* LISTA 2 */
+
+.contenedor_lista2{
+    background-color: black;
+    border: solid 2px red;
+    margin: 10px;
+}
+        
+.lista2_ul h1{
+    color: white;
+    font-size: 30px;
+}
+        
+.lista2_ul li{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+        
+        /* LISTA 3 */
+
+.contenedor_lista3{
+    background-color: black;
+    border: solid 2px red;
+    margin: 10px;
+}
+            
+.lista3_ul h1{
+    color: white;
+    font-size: 30px;
+}
+            
+.lista3_ul li{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+            /* LISTA 4 */
+
+
+.contenedor_lista4{
+    background-color: black;
+    border: solid 2px red;
+    margin: 10px;
+}
+            
+.lista4_ul h1{
+    color: white;
+    font-size: 30px;
+}
+            
+.lista4_ul li{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+        /* LISTA 5 */
+
+.contenedor_lista5{
+    background-color: black;
+    border: solid 2px red;
+    margin: 10px;
+}
+            
+.lista5_ul h1{
+    color: white;
+    font-size: 30px;
+}
+            
+.lista5_ul li{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+            /* SECTOR DESCARGAS */ /* SECTOR DESCARGAS */
+
+
+.descargas_p{
+        color: white;
+        background-color: black;
+        border: ridge 5px yellowgreen;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        a{
+            text-decoration: none;
+            color: greenyellow;
+        }
+}
+            
+.descargas_pb{
+        color: white;
+        background-color: black;
+        border: ridge 2px yellowgreen;
+        border-radius: 10px;
+        font-size: 25px;
+        width: 1000px;
+        margin-top: 150px;
+        margin-left: 250px;   
+        padding: 10px;
+}
+            
+.descarga_padre{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.descarga_img{
+    margin-top: 100px;
+    width: 300px;
+    height: 267px;
+    &:hover{
+        background-color: whitesmoke;
+        border-radius: 30px;
+    }
+}
+
+.descarga_r{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descarga_a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color: black;
+    border: ridge 2px red;
+    border-radius: 100px;
+
+}
+
+
+            /* SECTOR HISTORIAS */ /* SECTOR HISTORIAS */
+
+
+.padre_grid {  
+    display: grid;
+    grid-template-columns: 1 fr 1fr;
+    grid-template-rows: repeat(12,1fr);
+    gap: 4px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "zeus"
+    "hera"
+    "artemisa"
+    "apolo"
+    "atenea"
+    "hefesto"
+    "afrodita"
+    "hades"
+    "poseidon"
+    "ares"
+    "hermes"
+    "dionisio"
+    }
+
+     /* ZEUS */
+
+
+     .historias_zeus{
+        grid-area: zeus;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px;
+        background-color: rgba(0, 255, 255, 0.337);
+        border: solid 2px white;
+        border-radius: 100px;
+    }
+    
+    .zeus_img{
+        width: 250px;
+        height: 287px;
+        border: solid 2px white;
+        border-radius: 100px;
+    }
+    
+    .zeus_p{
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        margin: 10px;
+    }
+    
+    .zeus_nombre{
+        color:black;
+        background-color: rgba(128, 0, 128, 0.756);
+        border-radius: 20px;
+        font-size: 50px;
+        position: absolute;
+        bottom: 570px;
+        right: 1090px;
+    
+    }
+
+    /* HERA */
+
+
+.historias_hera{
+    grid-area: hera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hera_img{
+    width: 250px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hera_p{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.hera_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    bottom: 245px;
+    left: 1120px;
+}
+
+/* ARTEMISA */
+
+
+.historias_artemisa{
+    grid-area: artemisa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(0, 255, 255, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.artemisa_img{
+    width: 230px;
+    height: 287px;
+    border: solid 1px white;
+    border-radius: 100px;
+}
+
+.artemisa_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.artemisa_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 692px;
+    left: 290px;
+}
+
+
+
+        /* APOLO */
+
+
+.historias_apolo{
+    grid-area: apolo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.apolo_img{
+    width: 220px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.apolo_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.apolo_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 1020px;
+    left: 1100px;
+}
+
+
+
+        /* ATENEA */
+
+
+.historias_atenea{
+    grid-area: atenea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(0, 255, 255, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.atenea_img{
+    width: 1050px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.atenea_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+.atenea_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 1342px;
+    right: 1070px;
+}
+
+
+
+        /* HEFESTO */
+
+
+.historias_hefesto{
+    grid-area: hefesto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+    
+}
+
+.hefesto_img{
+    width: 230px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hefesto_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+}
+
+.hefesto_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 1665px;
+    left: 1060px;
+}
+
+
+        /* AFRODITA */
+
+
+.historias_afrodita{
+    grid-area: afrodita;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0px 10px 10px;
+    background-color: rgba(0, 255, 255, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+    
+}
+
+.afrodita_img{
+    width: 250px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.afrodita_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.afrodita_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 1985px;
+    right: 1020px;
+
+}
+
+
+
+        /* HADES */
+
+
+.historias_hades{
+    grid-area: hades;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hades_img{
+    width: 230px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hades_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hades_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 2308px;
+    left: 1080px;
+}
+
+
+
+        /* POSEIDON */
+
+
+.historias_poseidon{
+    grid-area: poseidon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background-color: rgba(0, 255, 255, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+    
+}
+
+.poseidon_img{
+    width: 240px;
+    height: 310px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.poseidon_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.poseidon_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 2620px;
+    right: 1020px;
+   
+}
+
+
+
+        /* ARES */
+
+
+.historias_ares{
+    grid-area: ares;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.ares_img{
+    width: 340px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.ares_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ares_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 2952px;
+    left: 1120px;
+}
+
+
+
+        /* HERMES */
+
+
+.historias_hermes{
+    grid-area: hermes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background-color: rgba(0, 255, 255, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hermes_img{
+    width: 1180px;
+    height: 310px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.hermes_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.hermes_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 3260px;
+    right: 1010px;
+}
+
+
+
+        /* DIONISIO */
+
+
+.historias_dionisio{
+    grid-area: dionisio;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgba(172, 255, 47, 0.337);
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.dionisio_img{
+    width: 900px;
+    height: 287px;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.dionisio_p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.dionisio_nombre{
+    color: black;
+    background-color: rgba(128, 0, 128, 0.756);
+    border-radius: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 3593px;
+    left: 1040px;
+}
+
+
+      /* SECTOR REGISTRATE */ /* SECTOR REGISTRATE */
+
+ .registrate_nombre{
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+.registro_nombres{
+   padding-top: 25px;
+   font-size: 20px;
+}
+
+.registro_barras{
+   width: 200px;
+}
+
+.registro_redes{
+   text-decoration: none;
+   color: white;
+   position: relative;
+   left: 620px;
+   bottom: 40px;
+   margin-left: 2px;
+   border: solid 2px red;
+   border-radius: 100px;
+   padding: 5px;
+   background-color: black;
+}
+
+.registrate_cuadro{
+   width: 400px;
+   height: 500px;
+   text-align: center;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.477);
+   margin-left: 600px;
+   margin-top: 80px;
+}
+
+.crearcuenta{
+   margin-top: 20px;
+}
+
+
+/* SECTOR INICIA SESION */ /* SECTOR INICIA SESION */
+
+.inicia_sesion_nombre{
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+.inicia_sesion_nombres{
+    position: relative;
+    top: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+
+.inicia_sesion_barras{
+margin-top: 20px;
+width: 200px;
+
+}
+
+.inicia_sesion_redes{
+color: white;
+text-decoration: none;
+position: relative;
+left: 620px;
+bottom: 40px;
+margin-left: 2px;
+border: solid 2px red;
+border-radius: 100px;
+padding: 5px;
+background-color: black;
+}
+
+.inicia_sesion_cuadro{
+width: 400px;
+height: 500px;
+text-align: center;
+color: white;
+background-color: rgba(0, 0, 0, 0.477);
+margin-left: 600px;
+margin-top: 80px;
+}
+
+.inicia_entrar{
+font-size: 20px;
+margin-top: 40px;
+width: 100px;
+}
