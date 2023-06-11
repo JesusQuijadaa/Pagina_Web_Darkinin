@@ -596,35 +596,15 @@ ul li a{
     background-color: red;
     padding: 6px 13px;
     border-radius: 5px;
+}
+
+
+ @media screen and (max-width: 768px){
+    .padre_medio_ranking{
+        margin-right: 10px;
     
-}
-
-.redes_padre_ranking{
-    display: flex;
-    justify-content:end;
-    padding-top: 10px;
-}
-
-.instagram_ranking{
-    margin-right: 20px;
-    width: 50px;
-    height: 60px;
-    color: red;
-}
-.tiktok_ranking{
-    margin-right: 70px;
-    width: 45px;
-    height: 45px; 
-}
- .facebook_ranking{
-    margin-right: 20px;
-    width: 50px;
-    height: 50px;
-    color: blue;
-    background-color: white;
-    border-radius: 50px;
+    }
  }
-
 
          /* SECTOR LISTA DE DROPS */ /* SECTOR LISTA DE DROPS */
 
