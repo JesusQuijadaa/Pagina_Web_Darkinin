@@ -434,16 +434,7 @@ body{
     
 }
 
-@media screen and (max-width:376px){
-    
-    .bienvenida_p{
-        height: 330px;
-    }
-    .jugar_ahora a{
-        top: 500px;
-        left: 145px;
-    }
-}
+
 @media screen and (max-width:360px){
     
     .jugar_ahora a{
@@ -451,16 +442,16 @@ body{
     }
 }
 
-@media screen and (max-width: 340px){
-    .bienvenida_p{
-        height: 335px;
-    }
- }
+
 
 @media screen and (max-width:321px){
 
     .bienvenida_p{
         height: 360px;
+        font-size: 15px;
+        padding: 5px 2px;
+        }
+    
     }
     
     .jugar_ahora a{
@@ -478,7 +469,7 @@ body{
     }
     
     
-}
+
 @media screen and (max-width:306px){
     .bienvenida_p{
         height: 365px;
@@ -494,11 +485,6 @@ body{
         }
 }
 
-@media screen and (max-width:301px){
-    .bienvenida_p{
-        height: 370px;
-    }
-}
 
 @media screen and (max-width:284px){
     .bienvenida_p{

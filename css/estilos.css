@@ -360,41 +360,32 @@ body {
     padding-right: 25px;
   }
 }
-@media screen and (max-width: 376px) {
-  .bienvenida_p {
-    height: 330px;
-  }
-  .jugar_ahora a {
-    top: 500px;
-    left: 145px;
-  }
-}
 @media screen and (max-width: 360px) {
   .jugar_ahora a {
     left: 130px;
   }
 }
-@media screen and (max-width: 340px) {
-  .bienvenida_p {
-    height: 335px;
-  }
-}
 @media screen and (max-width: 321px) {
   .bienvenida_p {
     height: 360px;
-  }
-  .jugar_ahora a {
-    top: 560px;
-    left: 110px;
-  }
-  h2 {
-    padding-left: 15px;
-    padding-right: 20px;
-  }
-  .descarga_padre_ranking a {
-    font-size: 13px;
+    font-size: 15px;
+    padding: 5px 2px;
   }
 }
+.jugar_ahora a {
+  top: 560px;
+  left: 110px;
+}
+
+h2 {
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.descarga_padre_ranking a {
+  font-size: 13px;
+}
+
 @media screen and (max-width: 306px) {
   .bienvenida_p {
     height: 365px;
@@ -406,11 +397,6 @@ body {
   .descarga_padre_ranking a {
     font-size: 12px;
     border: ridge 3px red;
-  }
-}
-@media screen and (max-width: 301px) {
-  .bienvenida_p {
-    height: 370px;
   }
 }
 @media screen and (max-width: 284px) {
