@@ -403,6 +403,19 @@ body {
     border: ridge 3px red;
   }
 }
+@media screen and (max-width: 284px) {
+  .bienvenida_p {
+    height: 375px;
+  }
+  .jugar_ahora a {
+    top: 570px;
+    left: 105px;
+  }
+  .descarga_padre_ranking a {
+    font-size: 12px;
+    border: ridge 3px red;
+  }
+}
 /* SECTOR RANKING */ /* SECTOR RANKING */
 .ranking_menu {
   max-width: 900px;
