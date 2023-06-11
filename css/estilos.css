@@ -533,45 +533,6 @@ ul li a {
   border-radius: 50px;
 }
 
-.descarga_padre_ranking {
-  margin-top: 20px;
-}
-
-.descarga_hijo_ranking {
-  font-size: 25px;
-  color: white;
-  background-color: black;
-  text-decoration: none;
-  border: ridge 5px red;
-  border-radius: 20px;
-  padding: 10px 10px;
-  margin-left: 18px;
-}
-
-@media screen and (max-width: 1024px) {
-  .instagram_ranking {
-    margin-right: 20px;
-    width: 40px;
-    height: 40px;
-  }
-  .tiktok_ranking {
-    margin-right: 40px;
-    width: 40px;
-    height: 40px;
-  }
-  .facebook_ranking {
-    margin-right: 20px;
-    width: 40px;
-    height: 40px;
-  }
-  .descarga_padre_ranking {
-    margin-top: 20px;
-  }
-  .descarga_hijo_ranking {
-    font-size: 20px;
-    margin-left: 15px;
-  }
-}
 /* SECTOR LISTA DE DROPS */ /* SECTOR LISTA DE DROPS */
 /* LISTA 1 */
 .lista {
