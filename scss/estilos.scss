@@ -434,6 +434,12 @@ body{
     
 }
 
+@media screen and (max-width:365px){
+    
+    .bienvenida_p{
+        height: 330px;
+    }
+}
 
 @media screen and (max-width:360px){
     
@@ -448,8 +454,6 @@ body{
 
     .bienvenida_p{
         height: 360px;
-        font-size: 13px;
-        padding: 5px 2px;
         }
     
     .jugar_ahora a{
