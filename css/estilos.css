@@ -510,6 +510,11 @@ ul li a {
     margin-right: 10px;
   }
 }
+@media screen and (max-width: 340px) {
+  .padre_medio_ranking {
+    margin-right: 15px;
+  }
+}
 /* SECTOR LISTA DE DROPS */ /* SECTOR LISTA DE DROPS */
 /* LISTA 1 */
 .lista {
