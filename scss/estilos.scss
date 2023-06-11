@@ -463,8 +463,20 @@ body{
     
     
 }
-
-
+@media screen and (max-width:306px){
+    .bienvenida_p{
+        height: 365px;
+        
+    }
+    .jugar_ahora a{
+        top: 570px;
+        left: 105px;
+    }
+    .descarga_padre_ranking a{
+            font-size: 12px;
+            border: ridge 3px red;  
+        }
+}
 
 
             /* SECTOR RANKING */ /* SECTOR RANKING */
