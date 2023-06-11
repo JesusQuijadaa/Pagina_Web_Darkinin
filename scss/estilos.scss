@@ -386,7 +386,7 @@ body{
     .jugar_ahora a{
         position: absolute;
         top: 460px;
-        left: 170px;
+        left: 155px;
         font-size: 15px;
     }
 
@@ -439,6 +439,16 @@ body{
     .bienvenida_p{
         height: 330px;
     }
+    .jugar_ahora a{
+        top: 500px;
+        left: 145px;
+    }
+}
+@media screen and (max-width:360px){
+    
+    .jugar_ahora a{
+        left: 130px;
+    }
 }
 @media screen and (max-width:321px){
 
@@ -447,9 +457,8 @@ body{
     }
     
     .jugar_ahora a{
-        position: absolute;
         top: 560px;
-        left: 120px;
+        left: 110px;
     }
     
     h2{
