@@ -493,6 +493,13 @@ body{
             border: ridge 3px red;  
         }
 }
+
+@media screen and (max-width:301px){
+    .bienvenida_p{
+        height: 370px;
+    }
+}
+
 @media screen and (max-width:284px){
     .bienvenida_p{
         height: 375px;
