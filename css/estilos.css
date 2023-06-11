@@ -374,6 +374,11 @@ body {
     left: 130px;
   }
 }
+@media screen and (max-width: 340px) {
+  .bienvenida_p {
+    height: 335px;
+  }
+}
 @media screen and (max-width: 321px) {
   .bienvenida_p {
     height: 360px;
