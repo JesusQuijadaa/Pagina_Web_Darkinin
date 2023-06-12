@@ -447,15 +447,18 @@ body{
     .jugar_ahora a{
         left: 130px;
     }
-}
-
-@media screen and (max-width:333px){
     .bienvenida_p{
         height: 320px;
         }
 }
 
-@media screen and (max-width:321px){
+@media screen and (max-width:333px){
+    .bienvenida_p{
+        height: 323px;
+        }
+}
+
+@media screen and (max-width:324px){
 
     .bienvenida_p{
         height: 360px;
