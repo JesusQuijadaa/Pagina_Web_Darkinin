@@ -373,15 +373,15 @@ body {
     left: 130px;
   }
   .bienvenida_p {
-    height: 340px;
+    height: 320px;
   }
 }
 @media screen and (max-width: 324px) {
   .bienvenida_p {
-    height: 360px;
+    height: 380px;
   }
   .jugar_ahora a {
-    top: 560px;
+    top: 570px;
     left: 110px;
   }
   h2 {
