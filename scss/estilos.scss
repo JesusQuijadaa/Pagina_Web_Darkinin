@@ -348,6 +348,7 @@ body{
     }
 }
 
+
 @media screen and (max-width:426px){
 
     .nombre_pagina{
@@ -448,7 +449,11 @@ body{
     }
 }
 
-
+@media screen and (max-width:333px){
+    .bienvenida_p{
+        height: 320px;
+        }
+}
 
 @media screen and (max-width:321px){
 
