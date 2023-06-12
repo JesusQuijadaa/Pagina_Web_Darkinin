@@ -10,6 +10,11 @@ body {
   background-color: rgba(0, 0, 0, 0.452);
 }
 
+.nombre_web {
+  text-decoration: none;
+  color: white;
+}
+
 .menu_img {
   right: 40px;
   width: 50px;
@@ -29,10 +34,13 @@ body {
   font-size: 20px;
 }
 .menu_link a:hover {
-  background-color: red;
+  color: black;
+  background-color: whitesmoke;
   margin-bottom: 15px;
   border: solid 2px black;
   border-radius: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .padre_medio_izq_index {
@@ -360,11 +368,6 @@ body {
     padding-right: 25px;
   }
 }
-@media screen and (max-width: 365px) {
-  .bienvenida_p {
-    height: 330px;
-  }
-}
 @media screen and (max-width: 360px) {
   .jugar_ahora a {
     left: 130px;
@@ -514,6 +517,7 @@ ul li a {
 /* SECTOR LISTA DE DROPS */ /* SECTOR LISTA DE DROPS */
 /* LISTA 1 */
 .lista {
+  margin-top: 20px;
   background-color: white;
   text-align: center;
   font-size: 50px;
@@ -522,7 +526,7 @@ ul li a {
 
 .contenedor_lista1 {
   background-color: black;
-  border: solid 2px red;
+  border: solid 2px greenyellow;
   margin: 10px;
 }
 
@@ -558,7 +562,7 @@ ul li a {
 /* LISTA 3 */
 .contenedor_lista3 {
   background-color: black;
-  border: solid 2px red;
+  border: solid 2px greenyellow;
   margin: 10px;
 }
 
@@ -594,7 +598,7 @@ ul li a {
 /* LISTA 5 */
 .contenedor_lista5 {
   background-color: black;
-  border: solid 2px red;
+  border: solid 2px greenyellow;
   margin: 10px;
 }
 
@@ -609,6 +613,31 @@ ul li a {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 769px) {
+  .lista {
+    font-size: 45px;
+  }
+  .lista1_ul h1 {
+    font-size: 25px;
+  }
+  .lista2_ul h1 {
+    font-size: 25px;
+  }
+  .lista3_ul h1 {
+    font-size: 25px;
+  }
+  .lista4_ul h1 {
+    font-size: 25px;
+  }
+  .lista5_ul h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .lista {
+    font-size: 40px;
+  }
+}
 /* SECTOR DESCARGAS */ /* SECTOR DESCARGAS */
 .descargas_p {
   color: white;
@@ -672,7 +701,7 @@ ul li a {
 /* SECTOR HISTORIAS */ /* SECTOR HISTORIAS */
 .padre_grid {
   display: grid;
-  grid-template-columns: 1 fr 1fr;
+  grid-template-columns: 1 fr;
   grid-template-rows: repeat(12, 1fr);
   gap: 4px 2px;
   grid-auto-flow: row;
@@ -710,9 +739,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  bottom: 570px;
-  right: 1090px;
 }
 
 /* HERA */
@@ -745,9 +771,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  bottom: 245px;
-  left: 1120px;
 }
 
 /* ARTEMISA */
@@ -782,9 +805,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  top: 692px;
-  left: 290px;
 }
 
 /* APOLO */
@@ -817,9 +837,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  top: 1020px;
-  left: 1100px;
 }
 
 /* ATENEA */
@@ -853,9 +870,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  top: 1342px;
-  right: 1070px;
 }
 
 /* HEFESTO */
@@ -889,9 +903,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  top: 1665px;
-  left: 1060px;
 }
 
 /* AFRODITA */
@@ -924,9 +935,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  top: 1985px;
-  right: 1020px;
 }
 
 /* HADES */
@@ -961,9 +969,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  top: 2308px;
-  left: 1080px;
 }
 
 /* POSEIDON */
@@ -997,9 +1002,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  top: 2620px;
-  right: 1020px;
 }
 
 /* ARES */
@@ -1034,9 +1036,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  top: 2952px;
-  left: 1120px;
 }
 
 /* HERMES */
@@ -1069,9 +1068,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  top: 3260px;
-  right: 1010px;
 }
 
 /* DIONISIO */
@@ -1104,9 +1100,6 @@ ul li a {
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
-  position: absolute;
-  top: 3593px;
-  left: 1040px;
 }
 
 /* SECTOR REGISTRATE */ /* SECTOR REGISTRATE */
@@ -1116,7 +1109,7 @@ ul li a {
 }
 
 .registro_nombres {
-  padding-top: 25px;
+  padding-top: 20px;
   font-size: 20px;
 }
 
