@@ -24,29 +24,34 @@
           <a href="../paginas/inicia sesion.html" class="menu_link">Inicia Sesion</a>
           </nav>
         </header>
-      <main class="registrate_cuadro">
-        <form>
-            <div class="registrate_nombre">Registrate</div> 
 
-            <div class="registro_nombres">Nombre</div>
-            <input type="text" class="registro_barras">
-
-            <div class="registro_nombres">Contraseña</div>
-            <input type="password" class="registro_barras">
-
-            <div class="registro_nombres">Correo Electronico</div>
-            <input type="text" class="registro_barras">
-
-            <div class="registro_nombres">Confirma Correo Electronico</div>
-            <input type="text" class="registro_barras">
-
-            <div class="registro_nombres"><input type="checkbox">Enviarme notificaciones</div>
+        <main class="cuadro_padre">
+          <div class="inicia_sesion_cuadro row">
             
+          <form> 
+            <h1 class="registrate_nombre">Registrate</h1>
+            <label for="nombre_usuario" class="registrate_nombres">Nombre de usuario</label>
+            <input type="text" name="nombre_usuario" class="registrate_barras">
+  
+            <label for="contraseña" class="registrate_nombres">Contraseña</label>
+            <input type="password" name="contraseña" class="registrate_barras">
+
+            <label for="correo" class="registrate_nombres">Correo Electronico</label>
+            <input type="email" name="correo electronico" class="registrate_barras">
+
+            <label for="correo" class="registrate_nombres">Confirma Correo Electronico</label>
+            <input type="email" name="correo electronico" class="registrate_barras">
+
+
+            <div><input type="checkbox">Enviarme notificaciones</div>
             <span><input type="submit" value="Crear Cuenta" class="crearcuenta"></span>
-        </form>
-
-      </main>
-
+  
+          </form>
+  
+          </div>
+  
+        </main>
+      
       <footer class="row">
         
         <div class="descarga_padre_ranking col-md-6">

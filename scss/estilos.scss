@@ -1285,94 +1285,68 @@ ul li a{
 
       /* SECTOR REGISTRATE */ /* SECTOR REGISTRATE */
 
- .registrate_nombre{
+ 
+
+.registrate_nombre{
     padding-top: 10px;
     font-size: 40px;
 }
 
-.registro_nombres{
-   padding-top: 20px;
-   font-size: 20px;
+.registrate_nombres{
+    display: block;
+    font-size: 25px;
+    padding-top: 20px;
 }
 
-.registro_barras{
-   width: 200px;
-}
-
-.registro_redes{
-   text-decoration: none;
-   color: white;
-   position: relative;
-   left: 620px;
-   bottom: 40px;
-   margin-left: 2px;
-   border: solid 2px red;
-   border-radius: 100px;
-   padding: 5px;
-   background-color: black;
-}
-
-.registrate_cuadro{
-   width: 400px;
-   height: 500px;
-   text-align: center;
-   color: white;
-   background-color: rgba(0, 0, 0, 0.477);
-   margin-left: 600px;
-   margin-top: 80px;
+.registrate_barras{
+    width: 250px;
 }
 
 .crearcuenta{
-   margin-top: 20px;
-}
-
+    margin-top: 20px;
+ }
+ 
 
 /* SECTOR INICIA SESION */ /* SECTOR INICIA SESION */
 
-.inicia_sesion_nombre{
-    padding-top: 40px;
-    font-size: 40px;
+
+
+.cuadro_padre{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
 }
 
-.inicia_sesion_nombres{
-    position: relative;
-    top: 20px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    font-size: 25px;
-}
-
-.inicia_sesion_barras{
-margin-top: 20px;
-width: 200px;
-
-}
-
-.inicia_sesion_redes{
-color: white;
-text-decoration: none;
-position: relative;
-left: 620px;
-bottom: 40px;
-margin-left: 2px;
-border: solid 2px red;
-border-radius: 100px;
-padding: 5px;
-background-color: black;
-}
 
 .inicia_sesion_cuadro{
-width: 400px;
-height: 500px;
-text-align: center;
-color: white;
-background-color: rgba(0, 0, 0, 0.477);
-margin-left: 600px;
-margin-top: 80px;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.477);
+    margin-top: 80px;
+    }
+
+    .inicia_nombre{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+.nombres{
+    display: block;
+    font-size: 25px;
+    padding-top: 15px;
 }
 
-.inicia_entrar{
-font-size: 20px;
-margin-top: 40px;
-width: 100px;
+.barras{
+    width: 250px;
+    margin-bottom: 20px;
 }
+
+
+.entrar{
+    width: 80px;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
