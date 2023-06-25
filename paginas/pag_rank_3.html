@@ -10,20 +10,47 @@
 </head>
 <body>
 
-    <div class="container-fluid">
-        <header class="menu row">
-          <nav class="menu_link">
-            <h1 class="nombre_pagina"><a href="../index.html" class="nombre_web">Darkinin Mobile</a><img src="../imagenes/zeus.jpg" class="menu_img" alt="zeus"></h1> 
-          
-          <a href="../paginas/campeones.html" class="menu_link">Campeones</a>
-          <a href="../paginas/ranking.html" class="menu_link">Ranking</a>
-          <a href="../paginas/lista de drops.html" class="menu_link">Lista de Drops</a>
-          <a href="../paginas/descargas.html" class="menu_link">Descargas</a>
-          <a href="../paginas/historias.html" class="menu_link">Historias</a>
-          <a href="../paginas/registrate.html" class="menu_link">Registrate</a>
-          <a href="../paginas/inicia sesion.html" class="menu_link">Inicia Sesion</a>
-          </nav>
-        </header>
+  <div class="container-fluid">
+    <header  class="row">
+      <!-- navbar = menu -->
+      <nav class="navbar navbar-expand-lg ">
+       <!-- navbar-brand = nombre web -->
+         <h1><a class="navbar-brand" href="../index.html">Darkinin Mobile</a><img src="../imagenes/zeus.jpg" class="menu__img" alt="zeus"></h1>
+         <!-- navbar-toggler = menu hamburguesa -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <!-- nav-item = Li de links -->
+             <li class="nav-item">
+               <!-- nav-link = links -->
+                <a class="nav-link" aria-current="page" href="../paginas/campeones.html">Campeones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/ranking.html">Ranking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/lista de drops.html">Lista de drops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/descargas.html">Descargas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/historias.html">Historias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/registrate.html">Resgistrate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/inicia sesion.html">Inicia Sesion</a>
+              </li>
+            </ul>
+            
+          </div>
+
+      </nav>
+</header>
 
         <main class="ranking_menu row">
             
@@ -89,7 +116,7 @@
       <footer class="row">
         
           <div class="descarga_padre_ranking col-md-6">
-            <a href="../paginas/descargas.html">Descarga Darkinin Mobile</a>
+            <a href="descargas.html">Descarga Darkinin Mobile</a>
             </div>
 
             <div class="redes_padre_ranking col-md-6">
