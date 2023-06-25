@@ -75,7 +75,7 @@ body {
 }
 
 .moustros {
-  font-size: 33px;
+  font-size: 25px;
 }
 
 .cuadro_moustro_index {
@@ -227,7 +227,7 @@ body {
     margin-top: 20px;
   }
   .moustros {
-    font-size: 28px;
+    font-size: 18px;
   }
   .cuadro_moustro_index {
     font-size: 10px;
@@ -373,6 +373,7 @@ body {
     margin-top: 20px;
   }
   .moustros {
+    font-size: 24px;
     display: inline;
     padding-left: 40px;
     padding-right: 30px;
@@ -772,6 +773,7 @@ ul li a {
 /* SECTOR LISTA DE DROPS */ /* SECTOR LISTA DE DROPS */
 /* LISTA 1 */
 .nombre_drops {
+  font-size: 30px;
   color: white;
 }
 
@@ -783,9 +785,9 @@ ul li a {
   font-family: fantasy;
 }
 
-.contenedor_lista1, .contenedor_lista5, .contenedor_lista4, .contenedor_lista3, .contenedor_lista2 {
+.contenedor_lista1, .contenedor_lista6, .contenedor_lista5, .contenedor_lista4, .contenedor_lista3, .contenedor_lista2 {
   background-color: black;
-  border: solid 2px greenyellow;
+  border: solid 2px #FF4400;
   margin: 10px;
 }
 
@@ -802,7 +804,7 @@ ul li a {
 
 /* LISTA 2 */
 .contenedor_lista2 {
-  border: solid 2px red;
+  border: solid 2px gray;
 }
 
 .lista2_ul h1 {
@@ -818,7 +820,7 @@ ul li a {
 
 /* LISTA 3 */
 .contenedor_lista3 {
-  border: solid 2px greenyellow;
+  border: solid 2px #FF4400;
 }
 
 .lista3_ul h1 {
@@ -834,7 +836,7 @@ ul li a {
 
 /* LISTA 4 */
 .contenedor_lista4 {
-  border: solid 2px red;
+  border: solid 2px gray;
 }
 
 .lista4_ul h1 {
@@ -850,7 +852,7 @@ ul li a {
 
 /* LISTA 5 */
 .contenedor_lista5 {
-  border: solid 2px greenyellow;
+  border: solid 2px #FF4400;
 }
 
 .lista5_ul h1 {
@@ -859,6 +861,22 @@ ul li a {
 }
 
 .lista5_ul li {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+/* LISTA 6 */
+.contenedor_lista6 {
+  border: solid 2px gray;
+}
+
+.lista6_ul h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.lista6_ul li {
   color: white;
   font-size: 20px;
   padding-bottom: 20px;
@@ -885,6 +903,9 @@ ul li a {
   }
 }
 @media screen and (max-width: 426px) {
+  .nombre_drops {
+    font-size: 26px;
+  }
   .lista {
     font-size: 40px;
   }

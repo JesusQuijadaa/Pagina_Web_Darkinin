@@ -86,7 +86,7 @@ body{
 }
 
 .moustros{
-    font-size: 33px;
+    font-size: 25px;
 }
 
 .cuadro_moustro_index{
@@ -282,9 +282,9 @@ body{
         font-size: 25px;
         margin-top: 20px;
     }
-    
+
     .moustros{
-        font-size: 28px;
+        font-size: 18px;
     }
 
     .cuadro_moustro_index{
@@ -473,6 +473,7 @@ body{
     }
     
     .moustros{
+        font-size: 24px;
         display: inline;
         padding-left: 40px;
         padding-right: 30px;
@@ -971,6 +972,7 @@ ul li a{
 
         /* LISTA 1 */
 .nombre_drops{
+    font-size: 30px;
     color: white;
 }
 .lista{
@@ -983,7 +985,7 @@ ul li a{
         
 .contenedor_lista1{
     background-color: $fondo__listas;
-    border: solid 2px greenyellow;
+    border: solid 2px $bordes_color;
     margin: 10px;
 }
         
@@ -1003,7 +1005,7 @@ ul li a{
 
 .contenedor_lista2{
     @extend .contenedor_lista1;
-    border: solid 2px red;
+    border: solid 2px $bordes_color_secundario;
 }
         
 .lista2_ul h1{
@@ -1021,7 +1023,7 @@ ul li a{
 
 .contenedor_lista3{
     @extend .contenedor_lista1;
-    border: solid 2px greenyellow;
+    border: solid 2px $bordes_color;
 }
             
 .lista3_ul h1{
@@ -1040,7 +1042,7 @@ ul li a{
 
 .contenedor_lista4{
     @extend .contenedor_lista1;
-    border: solid 2px red;
+    border: solid 2px $bordes_color_secundario;
 }
             
 .lista4_ul h1{
@@ -1058,7 +1060,7 @@ ul li a{
 
 .contenedor_lista5{
     @extend .contenedor_lista1;
-    border: solid 2px greenyellow;
+    border: solid 2px $bordes_color;
 }
             
 .lista5_ul h1{
@@ -1071,6 +1073,24 @@ ul li a{
     font-size: 20px;
     padding-bottom: 20px;
 }
+
+       /* LISTA 6 */
+
+       .contenedor_lista6{
+        @extend .contenedor_lista1;
+        border: solid 2px $bordes_color_secundario;
+    }
+                
+    .lista6_ul h1{
+        color: white;
+        font-size: 30px;
+    }
+                
+    .lista6_ul li{
+        color: white;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
 
 @media screen and (max-width:769px){
     .lista{
@@ -1094,6 +1114,9 @@ ul li a{
 }
 
 @media screen and (max-width:426px){
+    .nombre_drops{
+        font-size: 26px;
+    }
     .lista{
         font-size: 40px;
     }
@@ -1241,7 +1264,7 @@ ul li a{
 .historias_hera{
     @extend .historias_zeus;
     background-color: rgba(172, 255, 47, 0.337);
-    border-radius: $bordes__historias;
+    border-radius: $bordes_historias;
 }
 
 .hera_img{
@@ -1262,7 +1285,7 @@ ul li a{
 
 .historias_artemisa{
     @extend .historias_zeus;
-    border-radius: $bordes__historias;
+    border-radius: $bordes_historias;
 }
 
 .artemisa_img{
@@ -1287,7 +1310,7 @@ ul li a{
 .historias_apolo{
     @extend .historias_zeus;
     background-color: rgba(172, 255, 47, 0.337);
-    border-radius: $bordes__historias;
+    border-radius: $bordes_historias;
 }
 
 .apolo_img{
@@ -1309,7 +1332,7 @@ ul li a{
 
 .historias_atenea{
     @extend .historias_zeus;
-    border-radius: $bordes__historias;
+    border-radius: $bordes_historias;
 }
 
 .atenea_img{
@@ -1334,7 +1357,7 @@ ul li a{
 .historias_hefesto{
     @extend .historias_zeus;
     background-color: rgba(172, 255, 47, 0.337);
-    border-radius: $bordes__historias;
+    border-radius: $bordes_historias;
     
 }
 
@@ -1358,7 +1381,7 @@ ul li a{
 .historias_afrodita{
     @extend .historias_zeus;
     margin:10px 0px 10px 10px;
-    border-radius: $bordes__historias;
+    border-radius: $bordes_historias;
     
 }
 
@@ -1382,7 +1405,7 @@ ul li a{
 .historias_hades{
     @extend .historias_zeus;
     background-color: rgba(172, 255, 47, 0.337);
-    border-radius: $bordes__historias;
+    border-radius: $bordes_historias;
 }
 
 .hades_img{
@@ -1407,7 +1430,7 @@ ul li a{
 .historias_poseidon{
     @extend .historias_zeus;
     margin-left: 10px;
-    border-radius: $bordes__historias;
+    border-radius: $bordes_historias;
     
 }
 
@@ -1433,7 +1456,7 @@ ul li a{
 .historias_ares{
     @extend .historias_zeus;
     background-color: rgba(172, 255, 47, 0.337);
-    border-radius: $bordes__historias;
+    border-radius: $bordes_historias;
 }
 
 .ares_img{
@@ -1458,7 +1481,7 @@ ul li a{
 .historias_hermes{
     @extend .historias_zeus;
     margin-left: 10px;
-    border-radius: $bordes__historias;
+    border-radius: $bordes_historias;
 }
 
 .hermes_img{
@@ -1484,7 +1507,7 @@ ul li a{
     @extend .historias_zeus;
     margin: 10px;
     background-color: rgba(172, 255, 47, 0.337);
-    border-radius: $bordes__historias;
+    border-radius: $bordes_historias;
 }
 
 .dionisio_img{
