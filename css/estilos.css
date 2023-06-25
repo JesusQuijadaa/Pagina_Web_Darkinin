@@ -55,6 +55,10 @@ body {
   background-color: greenyellow;
 }
 
+.moustros {
+  font-size: 33px;
+}
+
 .cuadro_moustro_index {
   color: white;
   background-color: black;
@@ -109,10 +113,10 @@ body {
   padding-top: 10px;
 }
 
-.instagram {
+.instagram, .facebook {
   margin-right: 20px;
   width: 50px;
-  height: 60px;
+  height: 50px;
   color: red;
 }
 
@@ -123,11 +127,7 @@ body {
 }
 
 .facebook {
-  margin-right: 20px;
-  width: 50px;
-  height: 50px;
   color: blue;
-  border-radius: 50px;
 }
 
 .descarga_padre_ranking {
@@ -188,7 +188,7 @@ body {
   .jugar_ahora a {
     font-size: 20px;
   }
-  .instagram {
+  .instagram, .facebook {
     width: 40px;
     height: 40px;
   }
@@ -262,7 +262,7 @@ body {
   }
 }
 @media screen and (max-width: 640px) {
-  .instagram {
+  .instagram, .facebook {
     margin-right: 15px;
   }
   .tiktok {
@@ -278,7 +278,7 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
-  .instagram {
+  .instagram, .facebook {
     margin-right: 10px;
     width: 30px;
     height: 30px;
@@ -418,6 +418,108 @@ body {
     border: ridge 3px red;
   }
 }
+/* CAMPEONES */ /* CAMPEONES */
+.padre_selector {
+  background-color: gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  padding-top: 15px;
+}
+
+.selector {
+  color: black;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.campeones {
+  display: inline;
+  list-style: none;
+  font-size: 20px;
+  padding-left: 50px;
+}
+.campeones a {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.campeones a:hover {
+  background-color: red;
+}
+
+.padre_carousel {
+  display: flex;
+  justify-content: center;
+}
+
+#carouselExampleCaptions {
+  width: 50%;
+  height: 710px;
+  margin-bottom: 60px;
+}
+
+.padre_img {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: whitesmoke;
+  border: solid 5px whitesmoke;
+  border-radius: 10px;
+}
+
+.img {
+  border-radius: 95px;
+  width: 100%;
+  height: 700px;
+}
+
+.descripcion_campeones {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1025px) {
+  #carouselExampleCaptions {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 769px) {
+  #carouselExampleCaptions {
+    width: 90%;
+  }
+  .img {
+    border-radius: 60px;
+  }
+}
+@media screen and (max-width: 426px) {
+  #carouselExampleCaptions {
+    height: 610px;
+    width: 100%;
+  }
+  .img {
+    border-radius: 35px;
+    height: 600px;
+  }
+  .descripcion_campeones {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #carouselExampleCaptions {
+    height: 510px;
+  }
+  .img {
+    border-radius: 35px;
+    height: 500px;
+  }
+  .descripcion_campeones {
+    font-size: 16px;
+  }
+}
 /* SECTOR RANKING */ /* SECTOR RANKING */
 .ranking_menu {
   max-width: 900px;
@@ -519,6 +621,10 @@ ul li a {
 }
 /* SECTOR LISTA DE DROPS */ /* SECTOR LISTA DE DROPS */
 /* LISTA 1 */
+.nombre_drops {
+  color: white;
+}
+
 .lista {
   margin-top: 20px;
   background-color: white;
@@ -527,7 +633,7 @@ ul li a {
   font-family: fantasy;
 }
 
-.contenedor_lista1 {
+.contenedor_lista1, .contenedor_lista5, .contenedor_lista4, .contenedor_lista3, .contenedor_lista2 {
   background-color: black;
   border: solid 2px greenyellow;
   margin: 10px;
@@ -546,9 +652,7 @@ ul li a {
 
 /* LISTA 2 */
 .contenedor_lista2 {
-  background-color: black;
   border: solid 2px red;
-  margin: 10px;
 }
 
 .lista2_ul h1 {
@@ -564,9 +668,7 @@ ul li a {
 
 /* LISTA 3 */
 .contenedor_lista3 {
-  background-color: black;
   border: solid 2px greenyellow;
-  margin: 10px;
 }
 
 .lista3_ul h1 {
@@ -582,9 +684,7 @@ ul li a {
 
 /* LISTA 4 */
 .contenedor_lista4 {
-  background-color: black;
   border: solid 2px red;
-  margin: 10px;
 }
 
 .lista4_ul h1 {
@@ -600,9 +700,7 @@ ul li a {
 
 /* LISTA 5 */
 .contenedor_lista5 {
-  background-color: black;
   border: solid 2px greenyellow;
-  margin: 10px;
 }
 
 .lista5_ul h1 {
@@ -642,7 +740,7 @@ ul li a {
   }
 }
 /* SECTOR DESCARGAS */ /* SECTOR DESCARGAS */
-.descargas_p {
+.descargas_p, .descargas_pb {
   color: white;
   background-color: black;
   border: ridge 5px yellowgreen;
@@ -653,25 +751,20 @@ ul li a {
   padding-left: 10px;
   padding-right: 10px;
 }
-.descargas_p a {
+.descargas_p a, .descargas_pb a {
   text-decoration: none;
   color: greenyellow;
 }
 
 .descargas_pb {
-  color: white;
-  background-color: black;
   border: ridge 2px yellowgreen;
-  border-radius: 10px;
-  font-size: 25px;
-  width: 1000px;
   margin-top: 150px;
-  margin-left: 250px;
   padding: 10px;
 }
 
 .descarga_padre {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -679,8 +772,10 @@ ul li a {
   margin-top: 100px;
   width: 300px;
   height: 267px;
+  transition: all 1s;
 }
 .descarga_img:hover {
+  width: 350px;
   background-color: whitesmoke;
   border-radius: 30px;
 }
@@ -701,411 +796,299 @@ ul li a {
   border-radius: 100px;
 }
 
-/* SECTOR HISTORIAS */ /* SECTOR HISTORIAS */
-.padre_grid {
-  display: grid;
-  grid-template-columns: 1 fr;
-  grid-template-rows: repeat(12, 1fr);
-  gap: 4px 2px;
-  grid-auto-flow: row;
-  grid-template-areas: "zeus" "hera" "artemisa" "apolo" "atenea" "hefesto" "afrodita" "hades" "poseidon" "ares" "hermes" "dionisio";
+@media screen and (max-width: 926px) {
+  .descarga_img {
+    width: 260px;
+  }
 }
-
+@media screen and (max-width: 905px) {
+  .descarga_img {
+    width: 245px;
+    height: 237px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .descarga_img {
+    width: 220px;
+    height: 217px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .descarga_img {
+    width: 220px;
+    height: 217px;
+  }
+  .descarga_img:hover {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .descargas_p, .descargas_pb {
+    font-size: 18px;
+  }
+}
+/* SECTOR HISTORIAS */ /* SECTOR HISTORIAS */
 /* ZEUS */
-.historias_zeus {
-  grid-area: zeus;
+.historias_zeus, .historias_dionisio, .historias_hermes, .historias_ares, .historias_poseidon, .historias_hades, .historias_afrodita, .historias_hefesto, .historias_atenea, .historias_apolo, .historias_artemisa, .historias_hera {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 12px;
   background-color: rgba(0, 255, 255, 0.337);
   border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .zeus_img {
   width: 250px;
   height: 287px;
   border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 80px;
 }
 
-.zeus_p {
+.zeus_p, .dionisio_p, .hermes_p, .ares_p, .poseidon_p, .hades_p, .afrodita_p, .hefesto_p, .atenea_p, .apolo_p, .artemisa_p, .hera_p {
   font-size: 30px;
   text-align: center;
   color: white;
   margin: 10px;
 }
 
-.zeus_nombre {
+.zeus_nombre, .dionisio_nombre, .hermes_nombre, .ares_nombre, .poseidon_nombre, .hades_nombre, .afrodita_nombre, .hefesto_nombre, .atenea_nombre, .apolo_nombre, .artemisa_nombre, .hera_nombre {
   color: black;
   background-color: rgba(128, 0, 128, 0.756);
   border-radius: 20px;
   font-size: 50px;
+  margin-left: 10px;
+  padding: 2px 5px;
 }
 
 /* HERA */
 .historias_hera {
-  grid-area: hera;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 12px;
   background-color: rgba(172, 255, 47, 0.337);
-  border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .hera_img {
   width: 250px;
   height: 287px;
   border: solid 2px white;
-  border-radius: 100px;
-}
-
-.hera_p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-}
-
-.hera_nombre {
-  color: black;
-  background-color: rgba(128, 0, 128, 0.756);
-  border-radius: 20px;
-  font-size: 50px;
+  border-radius: 80px;
 }
 
 /* ARTEMISA */
 .historias_artemisa {
-  grid-area: artemisa;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 12px;
-  background-color: rgba(0, 255, 255, 0.337);
-  border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .artemisa_img {
-  width: 230px;
+  width: 250px;
   height: 287px;
-  border: solid 1px white;
-  border-radius: 100px;
+  border: solid 2px white;
+  border-radius: 80px;
 }
 
 .artemisa_p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.artemisa_nombre {
-  color: black;
-  background-color: rgba(128, 0, 128, 0.756);
-  border-radius: 20px;
-  font-size: 50px;
-}
-
 /* APOLO */
 .historias_apolo {
-  grid-area: apolo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 12px;
   background-color: rgba(172, 255, 47, 0.337);
-  border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .apolo_img {
-  width: 220px;
+  width: 250px;
   height: 287px;
   border: solid 2px white;
-  border-radius: 100px;
-}
-
-.apolo_p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-}
-
-.apolo_nombre {
-  color: black;
-  background-color: rgba(128, 0, 128, 0.756);
-  border-radius: 20px;
-  font-size: 50px;
+  border-radius: 80px;
 }
 
 /* ATENEA */
 .historias_atenea {
-  grid-area: atenea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 12px;
-  background-color: rgba(0, 255, 255, 0.337);
-  border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .atenea_img {
-  width: 1050px;
+  width: 250px;
   height: 287px;
   border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 80px;
 }
 
 .atenea_p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
   margin: 10px;
-}
-
-.atenea_nombre {
-  color: black;
-  background-color: rgba(128, 0, 128, 0.756);
-  border-radius: 20px;
-  font-size: 50px;
 }
 
 /* HEFESTO */
 .historias_hefesto {
-  grid-area: hefesto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 12px;
   background-color: rgba(172, 255, 47, 0.337);
-  border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .hefesto_img {
-  width: 230px;
+  width: 250px;
   height: 287px;
   border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 80px;
 }
 
 .hefesto_p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
   margin: 5px;
-}
-
-.hefesto_nombre {
-  color: black;
-  background-color: rgba(128, 0, 128, 0.756);
-  border-radius: 20px;
-  font-size: 50px;
 }
 
 /* AFRODITA */
 .historias_afrodita {
-  grid-area: afrodita;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 10px 0px 10px 10px;
-  background-color: rgba(0, 255, 255, 0.337);
-  border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .afrodita_img {
   width: 250px;
   height: 287px;
   border: solid 2px white;
-  border-radius: 100px;
-}
-
-.afrodita_p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-}
-
-.afrodita_nombre {
-  color: black;
-  background-color: rgba(128, 0, 128, 0.756);
-  border-radius: 20px;
-  font-size: 50px;
+  border-radius: 80px;
 }
 
 /* HADES */
 .historias_hades {
-  grid-area: hades;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 12px;
   background-color: rgba(172, 255, 47, 0.337);
-  border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .hades_img {
-  width: 230px;
+  width: 250px;
   height: 287px;
   border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 80px;
 }
 
 .hades_p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
   margin-left: 5px;
   margin-right: 5px;
 }
 
-.hades_nombre {
-  color: black;
-  background-color: rgba(128, 0, 128, 0.756);
-  border-radius: 20px;
-  font-size: 50px;
-}
-
 /* POSEIDON */
 .historias_poseidon {
-  grid-area: poseidon;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 10px;
-  background-color: rgba(0, 255, 255, 0.337);
-  border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .poseidon_img {
-  width: 240px;
-  height: 310px;
+  width: 250px;
+  height: 287px;
   border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 80px;
 }
 
 .poseidon_p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
   margin-right: 10px;
-}
-
-.poseidon_nombre {
-  color: black;
-  background-color: rgba(128, 0, 128, 0.756);
-  border-radius: 20px;
-  font-size: 50px;
 }
 
 /* ARES */
 .historias_ares {
-  grid-area: ares;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 12px;
   background-color: rgba(172, 255, 47, 0.337);
-  border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .ares_img {
-  width: 340px;
+  width: 250px;
   height: 287px;
   border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 80px;
 }
 
 .ares_p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.ares_nombre {
-  color: black;
-  background-color: rgba(128, 0, 128, 0.756);
-  border-radius: 20px;
-  font-size: 50px;
-}
-
 /* HERMES */
 .historias_hermes {
-  grid-area: hermes;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 10px;
-  background-color: rgba(0, 255, 255, 0.337);
-  border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .hermes_img {
-  width: 1180px;
-  height: 310px;
+  width: 250px;
+  height: 287px;
   border: solid 2px white;
-  border-radius: 100px;
-}
-
-.hermes_p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-}
-
-.hermes_nombre {
-  color: black;
-  background-color: rgba(128, 0, 128, 0.756);
-  border-radius: 20px;
-  font-size: 50px;
+  border-radius: 80px;
 }
 
 /* DIONISIO */
 .historias_dionisio {
-  grid-area: dionisio;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 10px;
   background-color: rgba(172, 255, 47, 0.337);
-  border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
 .dionisio_img {
-  width: 900px;
+  width: 250px;
   height: 287px;
   border: solid 2px white;
-  border-radius: 100px;
+  border-radius: 80px;
 }
 
-.dionisio_p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
+@media screen and (max-width: 426px) {
+  .zeus_nombre, .hera_nombre, .artemisa_nombre, .apolo_nombre, .atenea_nombre, .hefesto_nombre, .afrodita_nombre, .hades_nombre, .poseidon_nombre, .ares_nombre, .hermes_nombre, .dionisio_nombre {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  .zeus_p, .hera_p, .artemisa_p, .apolo_p, .atenea_p, .hefesto_p, .afrodita_p, .hades_p, .poseidon_p, .ares_p, .hermes_p, .dionisio_p {
+    font-size: 18px;
+  }
+  .zeus_img {
+    width: 90%;
+  }
+  .hera_img {
+    width: 90%;
+  }
+  .artemisa_img {
+    width: 90%;
+  }
+  .apolo_img {
+    width: 90%;
+  }
+  .atenea_img {
+    width: 90%;
+  }
+  .hefesto_img {
+    width: 90%;
+  }
+  .afrodita_img {
+    width: 90%;
+  }
+  .hades_img {
+    width: 90%;
+  }
+  .poseidon_img {
+    width: 90%;
+  }
+  .ares_img {
+    width: 90%;
+  }
+  .hermes_img {
+    width: 90%;
+  }
+  .dionisio_img {
+    width: 90%;
+  }
 }
-
-.dionisio_nombre {
-  color: black;
-  background-color: rgba(128, 0, 128, 0.756);
-  border-radius: 20px;
-  font-size: 50px;
+@media screen and (max-width: 321px) {
+  .zeus_nombre, .hera_nombre, .artemisa_nombre, .apolo_nombre, .atenea_nombre, .hefesto_nombre, .afrodita_nombre, .hades_nombre, .poseidon_nombre, .ares_nombre, .hermes_nombre, .dionisio_nombre {
+    font-size: 35px;
+  }
 }
-
 /* SECTOR REGISTRATE */ /* SECTOR REGISTRATE */
+.cuadro_padre {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
 .registrate_nombre {
   padding-top: 10px;
   font-size: 40px;
@@ -1125,13 +1108,36 @@ ul li a {
   margin-top: 20px;
 }
 
-/* SECTOR INICIA SESION */ /* SECTOR INICIA SESION */
-.cuadro_padre {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 25px;
+@media screen and (max-width: 426px) {
+  .registrate_nombre {
+    font-size: 35px;
+  }
+  .registrate_nombres {
+    font-size: 23px;
+  }
 }
-
+@media screen and (max-width: 376px) {
+  .cuadro_padre {
+    width: 90%;
+    margin-left: 18px;
+  }
+  .registrate_nombre {
+    padding-top: 15px;
+    font-size: 32px;
+  }
+  .registrate_nombres {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .cuadro_padre {
+    margin-left: 15px;
+  }
+  .registrate_barras {
+    width: 220px;
+  }
+}
+/* SECTOR INICIA SESION */ /* SECTOR INICIA SESION */
 .inicia_sesion_cuadro {
   width: 400px;
   height: 500px;
@@ -1144,6 +1150,7 @@ ul li a {
 .inicia_nombre {
   padding-top: 50px;
   padding-bottom: 20px;
+  font-size: 40px;
 }
 
 .nombres {
@@ -1161,6 +1168,25 @@ ul li a {
   width: 80px;
   font-size: 20px;
   margin-top: 35px;
+}
+
+@media screen and (max-width: 426px) {
+  .nombres {
+    font-size: 22px;
+    padding-top: 30px;
+  }
+  .inicia_nombre {
+    font-size: 40px;
+  }
+  .inicia_sesion_cuadro {
+    width: 380px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .barras {
+    width: 230px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
