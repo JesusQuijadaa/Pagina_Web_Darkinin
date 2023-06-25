@@ -79,9 +79,10 @@ body{
 }
 
 .nombre_moustros{
+    color: black;
     font-size: 28px;
     margin-top: 20px;
-    background-color: greenyellow;
+    background-color: #FF4400;
 }
 
 .moustros{
@@ -110,7 +111,7 @@ body{
         text-decoration: none;
         margin-bottom: 50px;
         font-size: 30px;
-        border: ridge 3px yellowgreen;
+        border: ridge 3px whitesmoke;
         padding: 5px;
         border-radius: 100px;
         &:hover {
@@ -133,7 +134,7 @@ body{
 .bienvenida_p{
     color: white;
     background-color: black;
-    border: ridge 5px yellowgreen;
+    border: ridge 8px #FF4400;
     border-radius: 50px;
     width: 260px;
     font-size: 20px;
@@ -149,9 +150,10 @@ body{
     margin-right: 20px;
     width: 50px;
     height: 50px;
-    color: red;
+    color: white;
 }
 .tiktok{
+    color: black;
     margin-right: 70px;
     width: 45px;
     height: 45px; 
@@ -168,10 +170,10 @@ body{
         color: white;
         background-color: black;
         text-decoration: none;
-        border: ridge 5px red;
+        border: ridge 5px gray;
         border-radius: 20px;
         padding: 10px 10px;
-        
+        font-family: arial;
     }
 }
 
@@ -386,7 +388,7 @@ body{
     
     .bienvenida_p{
         padding: 7px;
-        border: ridge 4px yellowgreen;
+        border: ridge 7px #FF4400;
         border-radius: 40px;
         width: 90%;
     }
