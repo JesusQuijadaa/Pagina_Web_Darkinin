@@ -82,7 +82,7 @@ body{
     color: black;
     font-size: 28px;
     margin-top: 20px;
-    background-color: #FF4400;
+    background-color: $bordes_color;
 }
 
 .moustros{
@@ -134,7 +134,7 @@ body{
 .bienvenida_p{
     color: white;
     background-color: black;
-    border: ridge 8px #FF4400;
+    border: ridge 8px $bordes_color;
     border-radius: 50px;
     width: 260px;
     font-size: 20px;
@@ -153,7 +153,6 @@ body{
     color: white;
 }
 .tiktok{
-    color: black;
     margin-right: 70px;
     width: 45px;
     height: 45px; 
@@ -388,7 +387,7 @@ body{
     
     .bienvenida_p{
         padding: 7px;
-        border: ridge 7px #FF4400;
+        border: ridge 7px $bordes_color;
         border-radius: 40px;
         width: 90%;
     }
@@ -865,7 +864,7 @@ border-radius: 10px;
         background-color: black;
         margin: auto;
         margin-top: 50px;
-        border: ridge 4px greenyellow;
+        border: ridge 4px $bordes_color;
         border-radius: 10px;
                 
 }
@@ -1105,7 +1104,7 @@ ul li a{
 .descargas_p{
         color: white;
         background-color: black;
-        border: ridge 5px yellowgreen;
+        border: ridge 5px $bordes_color;
         border-radius: 10px;
         text-align: center;
         font-size: 25px;
@@ -1114,13 +1113,13 @@ ul li a{
         padding-right: 10px;
         a{
             text-decoration: none;
-            color: greenyellow;
+            color: $bordes_color;
         }
 }
             
 .descargas_pb{
         @extend .descargas_p;
-        border: ridge 2px yellowgreen;
+        border: ridge 2px $bordes_color;
         margin-top: 150px;  
         padding: 10px;
 }

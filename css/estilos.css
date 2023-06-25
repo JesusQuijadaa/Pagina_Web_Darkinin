@@ -140,7 +140,6 @@ body {
 }
 
 .tiktok {
-  color: black;
   margin-right: 70px;
   width: 45px;
   height: 45px;
@@ -677,7 +676,7 @@ body {
   background-color: black;
   margin: auto;
   margin-top: 50px;
-  border: ridge 4px greenyellow;
+  border: ridge 4px #FF4400;
   border-radius: 10px;
 }
 
@@ -894,7 +893,7 @@ ul li a {
 .descargas_p, .descargas_pb {
   color: white;
   background-color: black;
-  border: ridge 5px yellowgreen;
+  border: ridge 5px #FF4400;
   border-radius: 10px;
   text-align: center;
   font-size: 25px;
@@ -904,11 +903,11 @@ ul li a {
 }
 .descargas_p a, .descargas_pb a {
   text-decoration: none;
-  color: greenyellow;
+  color: #FF4400;
 }
 
 .descargas_pb {
-  border: ridge 2px yellowgreen;
+  border: ridge 2px #FF4400;
   margin-top: 150px;
   padding: 10px;
 }
