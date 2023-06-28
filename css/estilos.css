@@ -1268,7 +1268,7 @@ ul li a {
 .registrate_nombres {
   display: block;
   font-size: 25px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .registrate_barras {
@@ -1281,7 +1281,7 @@ ul li a {
 
 @media screen and (max-width: 426px) {
   .registrate_nombre {
-    font-size: 35px;
+    font-size: 32px;
   }
   .registrate_nombres {
     font-size: 23px;
@@ -1294,7 +1294,6 @@ ul li a {
   }
   .registrate_nombre {
     padding-top: 15px;
-    font-size: 32px;
   }
   .registrate_nombres {
     font-size: 20px;
@@ -1359,6 +1358,5 @@ ul li a {
     width: 230px;
   }
 }
-/* menu bootstrap */
 
 /*# sourceMappingURL=estilos.css.map */
