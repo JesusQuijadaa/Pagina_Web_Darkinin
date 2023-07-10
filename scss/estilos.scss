@@ -8,7 +8,7 @@ body{
 @mixin historias__img {
         width: 250px;
         height: 287px;
-        border: solid 2px white;
+        border: solid 2px $letras;
         border-radius: 80px;
 }
 @import "colores";
@@ -150,9 +150,10 @@ body{
     margin-right: 20px;
     width: 50px;
     height: 50px;
-    color: white;
+    color: red;
 }
 .tiktok{
+    color: black;
     margin-right: 70px;
     width: 45px;
     height: 45px; 
@@ -1154,14 +1155,16 @@ ul li a{
 }
 
 .descarga_img{
+    background: rgb(28,20,20);
+background: linear-gradient(4deg, rgba(28,20,20,1) 13%, rgba(149,130,102,1) 74%);
+    border-radius: 30px;
     margin-top: 100px;
     width: 300px;
     height: 267px;
     transition: all 1s;
     &:hover{
         width: 350px;
-        background-color: $fondo__img_descargas;
-        border-radius: 30px;
+        border-radius: 40px;
     }
 }
 
@@ -1205,6 +1208,16 @@ ul li a{
     
 }
 
+@media screen and (max-width:684px){
+    .descarga_img{
+        margin-top: 40px;
+    }   
+    .descargas_pb{
+        margin-top: 40px;  
+        
+}
+}
+
 @media screen and (max-width:680px){
     .descarga_img{
         width: 220px;
@@ -1226,6 +1239,12 @@ ul li a{
 
      /* ZEUS */
 
+     .resaltartexto{
+        color: rgb(235, 235, 10);
+    }
+    .resaltartexto2{
+        color:rgb(7, 217, 228);
+    }
 
      .historias_zeus{
         display: flex;
@@ -1233,9 +1252,9 @@ ul li a{
         justify-content: center;
         align-items: center;
         margin: 12px;
-        background-color: rgba(0, 255, 255, 0.337);
+        background-color:$fondo__dos;
         border: solid 2px white;
-        border-radius: 40px;
+        border-radius: $bordes_historias;
     }
     
     .zeus_img{
@@ -1245,13 +1264,13 @@ ul li a{
     .zeus_p{
         font-size: 30px;
         text-align: center;
-        color: white;
+        color: $letras;
         margin: 10px;
     }
     
     .zeus_nombre{
         color:black;
-        background-color: rgba(128, 0, 128, 0.756);
+        background-color: rgb(235, 235, 10);
         border-radius: 20px;
         font-size: 50px;
         margin-left: 10px;
@@ -1262,8 +1281,13 @@ ul li a{
     /* HERA */
 
 .historias_hera{
-    @extend .historias_zeus;
-    background-color: rgba(172, 255, 47, 0.337);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    background-color:$fondo__uno;
+    border: solid 2px white;
     border-radius: $bordes_historias;
 }
 
@@ -1276,8 +1300,12 @@ ul li a{
 }
 
 .hera_nombre{
-    @extend .zeus_nombre;
-    
+    color:black;
+    background-color: rgb(7, 217, 228);
+    border-radius: 20px;
+    font-size: 50px;
+    margin-left: 10px;
+    padding: 2px 5px;
 }
 
 /* ARTEMISA */
@@ -1308,8 +1336,7 @@ ul li a{
        
 
 .historias_apolo{
-    @extend .historias_zeus;
-    background-color: rgba(172, 255, 47, 0.337);
+    @extend .historias_hera;
     border-radius: $bordes_historias;
 }
 
@@ -1322,7 +1349,7 @@ ul li a{
 }
 
 .apolo_nombre{
-    @extend .zeus_nombre;
+    @extend .hera_nombre;
 }
 
 
@@ -1355,8 +1382,7 @@ ul li a{
         
 
 .historias_hefesto{
-    @extend .historias_zeus;
-    background-color: rgba(172, 255, 47, 0.337);
+    @extend .historias_hera;
     border-radius: $bordes_historias;
     
 }
@@ -1371,7 +1397,7 @@ ul li a{
 }
 
 .hefesto_nombre{
-    @extend .zeus_nombre;
+    @extend .hera_nombre;
 }
 
 
@@ -1403,8 +1429,7 @@ ul li a{
 
         
 .historias_hades{
-    @extend .historias_zeus;
-    background-color: rgba(172, 255, 47, 0.337);
+    @extend .historias_hera;
     border-radius: $bordes_historias;
 }
 
@@ -1419,7 +1444,7 @@ ul li a{
 }
 
 .hades_nombre{
-    @extend .zeus_nombre;
+    @extend .hera_nombre;
 }
 
 
@@ -1454,8 +1479,7 @@ ul li a{
 
         
 .historias_ares{
-    @extend .historias_zeus;
-    background-color: rgba(172, 255, 47, 0.337);
+    @extend .historias_hera;
     border-radius: $bordes_historias;
 }
 
@@ -1470,7 +1494,7 @@ ul li a{
 }
 
 .ares_nombre{
-    @extend .zeus_nombre;
+    @extend .hera_nombre;
 }
 
 
@@ -1504,9 +1528,8 @@ ul li a{
 
         
 .historias_dionisio{
-    @extend .historias_zeus;
+    @extend .historias_hera;
     margin: 10px;
-    background-color: rgba(172, 255, 47, 0.337);
     border-radius: $bordes_historias;
 }
 
@@ -1519,7 +1542,7 @@ ul li a{
 }
 
 .dionisio_nombre{
-    @extend .zeus_nombre;
+    @extend .hera_nombre;
 }
 
 @media screen and (max-width:426px) {
@@ -1642,7 +1665,8 @@ ul li a{
     height: 500px;
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.477);
+    background: rgb(149,130,102);
+background: linear-gradient(4deg, rgba(149,130,102,1) 13%, rgba(48,38,38,1) 74%);
     margin-top: 80px;
     }
 

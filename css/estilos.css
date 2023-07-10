@@ -136,10 +136,11 @@ body {
   margin-right: 20px;
   width: 50px;
   height: 50px;
-  color: white;
+  color: red;
 }
 
 .tiktok {
+  color: black;
   margin-right: 70px;
   width: 45px;
   height: 45px;
@@ -940,6 +941,9 @@ ul li a {
 }
 
 .descarga_img {
+  background: rgb(28, 20, 20);
+  background: linear-gradient(4deg, rgb(28, 20, 20) 13%, rgb(149, 130, 102) 74%);
+  border-radius: 30px;
   margin-top: 100px;
   width: 300px;
   height: 267px;
@@ -947,8 +951,7 @@ ul li a {
 }
 .descarga_img:hover {
   width: 350px;
-  background-color: whitesmoke;
-  border-radius: 30px;
+  border-radius: 40px;
 }
 
 .descarga_r {
@@ -984,6 +987,14 @@ ul li a {
     height: 217px;
   }
 }
+@media screen and (max-width: 684px) {
+  .descarga_img {
+    margin-top: 40px;
+  }
+  .descargas_pb {
+    margin-top: 40px;
+  }
+}
 @media screen and (max-width: 680px) {
   .descarga_img {
     width: 220px;
@@ -1000,13 +1011,21 @@ ul li a {
 }
 /* SECTOR HISTORIAS */ /* SECTOR HISTORIAS */
 /* ZEUS */
-.historias_zeus, .historias_dionisio, .historias_hermes, .historias_ares, .historias_poseidon, .historias_hades, .historias_afrodita, .historias_hefesto, .historias_atenea, .historias_apolo, .historias_artemisa, .historias_hera {
+.resaltartexto {
+  color: rgb(235, 235, 10);
+}
+
+.resaltartexto2 {
+  color: rgb(7, 217, 228);
+}
+
+.historias_zeus, .historias_hermes, .historias_poseidon, .historias_afrodita, .historias_atenea, .historias_artemisa {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 12px;
-  background-color: rgba(0, 255, 255, 0.337);
+  background-color: rgba(7, 71, 54, 0.838);
   border: solid 2px white;
   border-radius: 40px;
 }
@@ -1025,9 +1044,9 @@ ul li a {
   margin: 10px;
 }
 
-.zeus_nombre, .dionisio_nombre, .hermes_nombre, .ares_nombre, .poseidon_nombre, .hades_nombre, .afrodita_nombre, .hefesto_nombre, .atenea_nombre, .apolo_nombre, .artemisa_nombre, .hera_nombre {
+.zeus_nombre, .hermes_nombre, .poseidon_nombre, .afrodita_nombre, .atenea_nombre, .artemisa_nombre {
   color: black;
-  background-color: rgba(128, 0, 128, 0.756);
+  background-color: rgb(235, 235, 10);
   border-radius: 20px;
   font-size: 50px;
   margin-left: 10px;
@@ -1035,8 +1054,14 @@ ul li a {
 }
 
 /* HERA */
-.historias_hera {
-  background-color: rgba(172, 255, 47, 0.337);
+.historias_hera, .historias_dionisio, .historias_ares, .historias_hades, .historias_hefesto, .historias_apolo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  background-color: rgba(29, 18, 41, 0.838);
+  border: solid 2px white;
   border-radius: 40px;
 }
 
@@ -1045,6 +1070,15 @@ ul li a {
   height: 287px;
   border: solid 2px white;
   border-radius: 80px;
+}
+
+.hera_nombre, .dionisio_nombre, .ares_nombre, .hades_nombre, .hefesto_nombre, .apolo_nombre {
+  color: black;
+  background-color: rgb(7, 217, 228);
+  border-radius: 20px;
+  font-size: 50px;
+  margin-left: 10px;
+  padding: 2px 5px;
 }
 
 /* ARTEMISA */
@@ -1066,7 +1100,6 @@ ul li a {
 
 /* APOLO */
 .historias_apolo {
-  background-color: rgba(172, 255, 47, 0.337);
   border-radius: 40px;
 }
 
@@ -1095,7 +1128,6 @@ ul li a {
 
 /* HEFESTO */
 .historias_hefesto {
-  background-color: rgba(172, 255, 47, 0.337);
   border-radius: 40px;
 }
 
@@ -1125,7 +1157,6 @@ ul li a {
 
 /* HADES */
 .historias_hades {
-  background-color: rgba(172, 255, 47, 0.337);
   border-radius: 40px;
 }
 
@@ -1160,7 +1191,6 @@ ul li a {
 
 /* ARES */
 .historias_ares {
-  background-color: rgba(172, 255, 47, 0.337);
   border-radius: 40px;
 }
 
@@ -1192,7 +1222,6 @@ ul li a {
 /* DIONISIO */
 .historias_dionisio {
   margin: 10px;
-  background-color: rgba(172, 255, 47, 0.337);
   border-radius: 40px;
 }
 
@@ -1204,7 +1233,7 @@ ul li a {
 }
 
 @media screen and (max-width: 426px) {
-  .zeus_nombre, .hera_nombre, .artemisa_nombre, .apolo_nombre, .atenea_nombre, .hefesto_nombre, .afrodita_nombre, .hades_nombre, .poseidon_nombre, .ares_nombre, .hermes_nombre, .dionisio_nombre {
+  .zeus_nombre, .artemisa_nombre, .atenea_nombre, .afrodita_nombre, .poseidon_nombre, .hermes_nombre {
     font-size: 40px;
     margin-top: 10px;
   }
@@ -1249,7 +1278,7 @@ ul li a {
   }
 }
 @media screen and (max-width: 321px) {
-  .zeus_nombre, .hera_nombre, .artemisa_nombre, .apolo_nombre, .atenea_nombre, .hefesto_nombre, .afrodita_nombre, .hades_nombre, .poseidon_nombre, .ares_nombre, .hermes_nombre, .dionisio_nombre {
+  .zeus_nombre, .artemisa_nombre, .atenea_nombre, .afrodita_nombre, .poseidon_nombre, .hermes_nombre {
     font-size: 35px;
   }
 }
@@ -1313,7 +1342,8 @@ ul li a {
   height: 500px;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.477);
+  background: rgb(149, 130, 102);
+  background: linear-gradient(4deg, rgb(149, 130, 102) 13%, rgb(48, 38, 38) 74%);
   margin-top: 80px;
 }
 
