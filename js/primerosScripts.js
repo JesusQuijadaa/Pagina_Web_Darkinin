@@ -4,24 +4,26 @@ let usuario = prompt("Ingrese un usuario.");
 let contraseña = prompt("Ingrese su contraseña.");
 let salida;
 
-for(let i= 0; i <200; i++){
 
-    if(salida == 1){
-        alert("Lastimosamente no se completó su registro. Vuelva pronto.");
-        break;
-    
-    }else if(usuario == "" || contraseña == ""){
+    for(let i= 0; i <200; i++){
+
+        if(salida == 1){
+            alert("Lastimosamente no se completó su registro. Vuelva pronto.");
+            break;
         
-        alert("No se ha ingresado datos en algunos de los campos, por favor intente nuevamente");
-        usuario= prompt("Ingrese un usuario");
-        contraseña=prompt("Ingrese una contraseña");
-        salida=prompt("Ingresa 1 para salir. Sino, puedes continuar.")
-        
-    }else{
-        alert("Bienvenido "+ usuario);
-        break;
+        }else if(usuario == "" || contraseña == ""){
+            
+            alert("No se ha ingresado datos en algunos de los campos, por favor intente nuevamente");
+            usuario= prompt("Ingrese un usuario");
+            contraseña=prompt("Ingrese una contraseña");
+            salida=prompt("Ingresa 1 para salir. Sino, puedes continuar.")
+            
+        }else{
+            alert("Bienvenido "+ usuario);
+            break;
+        }
     }
-}
+
 
 let continuamos;
 let historias;
@@ -67,6 +69,16 @@ for(let i= 0; i <200; i++){
         historias=prompt("Elige una de las siguientes opciones:\n 1--Zeus. \n 2--Hades. \n 3--Dionisio. \n --Para salir ingrese 0.");
         
     }
+}
+
+function valoraciones(calificacion){
+    alert("Gracias por sus valoraciones "+ usuario);
+}
+
+for(let i=0; i <3; i++){
+    let valoracionesDeUsuario= prompt("Calificanos del 1 al 10.\nSiendo 1, la valoracion mas baja y 10 la valoracion mas alta");
+    valoraciones(usuario);
+    break;
 }
         
     
