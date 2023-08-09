@@ -73,12 +73,13 @@ for(let i= 0; i <200; i++){
 }
 
 /* Valoraciones */
+let valoracionesDeUsuario;
 function valoraciones(calificacion){
     alert("Gracias por sus valoraciones "+ usuario);
 }
 
 for(let i=0; i <3; i++){
-    let valoracionesDeUsuario= prompt("Calificanos del 1 al 10.\nSiendo 1, la valoracion mas baja y 10 la valoracion mas alta");
+    valoracionesDeUsuario= prompt("Calificanos del 1 al 10.\nSiendo 1, la valoracion mas baja y 10 la valoracion mas alta");
     valoraciones(usuario);
     break;
 }
