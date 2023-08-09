@@ -4,7 +4,7 @@ let usuario = prompt("Ingrese un usuario.");
 let contraseña = prompt("Ingrese su contraseña.");
 let salida;
 
-
+/* Validacion de datos ingresados */
     for(let i= 0; i <200; i++){
 
         if(salida == 1){
@@ -28,13 +28,14 @@ let salida;
 let continuamos;
 let historias;
 
-
+/* Continuacion solo si el usuario es registrado */
     if(salida != 1){
         alert("Es un placer tenerte por aca.");
         continuamos=prompt("Puedes empezar a ver nuestro contenido si deseas. Para ello debes elegir una opcion: \n 1--Continuar. \n 2--Salir.");
         }
   
 
+/* Contenido a mostrar al usuario registrado */
 for(let i= 0; i <200; i++){
 
      if(historias == 1){
@@ -71,6 +72,7 @@ for(let i= 0; i <200; i++){
     }
 }
 
+/* Valoraciones */
 function valoraciones(calificacion){
     alert("Gracias por sus valoraciones "+ usuario);
 }
