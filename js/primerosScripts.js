@@ -11,7 +11,7 @@ let salida;
             alert("Lastimosamente no se completó su registro. Vuelva pronto.");
             break;
         
-        }else if(usuario == "" || contraseña == ""){
+        }else if(usuario == "" || contraseña == "" || usuario == null || contraseña == null){
             
             alert("No se ha ingresado datos en algunos de los campos, por favor intente nuevamente");
             usuario= prompt("Ingrese un usuario");
