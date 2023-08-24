@@ -1,11 +1,11 @@
-/* alert("Bienvenid@ a Darkinin Mobile, a continuacion le pediremos los siguientes datos para su registro: \n -Usuario. \n -Contraseña.")
+ alert("Bienvenid@ a Darkinin Mobile, a continuacion le pediremos los siguientes datos para su registro: \n -Usuario. \n -Contraseña.")
 
 let usuario = prompt("Ingrese un usuario.");
 let contraseña = prompt("Ingrese su contraseña.");
-let salida; */
+let salida; 
 
 /* Validacion de datos ingresados */
-  /*   for(let i= 0; i <200; i++){
+    for(let i= 0; i <200; i++){
 
         if(salida == 1){
             alert("Lastimosamente no se completó su registro. Vuelva pronto.");
@@ -26,17 +26,17 @@ let salida; */
 
 
 let continuamos;
-let historias; */
+let historias; 
 
 /* Continuacion solo si el usuario es registrado */
-    /* if(salida != 1){
+     if(salida != 1){
         alert("Es un placer tenerte por aca.");
         continuamos=prompt("Puedes empezar a ver nuestro contenido si deseas. Para ello debes elegir una opcion: \n 1--Continuar. \n 2--Salir.");
-        } */
+        } 
   
 
 /* Contenido a mostrar al usuario registrado */
-/* for(let i= 0; i <200; i++){
+ for(let i= 0; i <200; i++){
 
      if(historias == 1){
         alert("Usted a elegido Zeus");
@@ -74,40 +74,40 @@ let historias; */
         historias=prompt("Elige una de las siguientes opciones:\n 1--Zeus. \n 2--Hades. \n 3--Dionisio. \n --Para ir a la tienda de atuendos ingrese 8, y para salir ingrese 0.");
         
     }
-} */
+} 
 
 /* Molde */
-/* class Atuendos {
+ class Atuendos {
     constructor(nombre, precio) {
         this.nombre = nombre;
         this.precio = precio;
     }
-} */
+} 
 
 /* Atuendos */
-/* const atuendo1 = new Atuendos("Emperador", 650);
+ const atuendo1 = new Atuendos("Emperador", 650);
 const atuendo2 = new Atuendos("Renegado", 450);
 const atuendo3 = new Atuendos("Defensor",850);
 const atuendo4 = new Atuendos("Arquera", 700);
- */
+ 
 
 /* Atuendos agregados */
 const carritoAtuendos = [];
 
 /* Agregando al carrito */
-/* function agregarAtuendos(atuendos){
+ function agregarAtuendos(atuendos){
     carritoAtuendos.push(atuendos);
-} */
+}
 
 let agregarAlCarrito;
 
-/* if(historias != 0){
+ if(historias != 0){
     agregarAlCarrito=parseInt(prompt("Ingresa el numero correspondiente al atuendo que quiere elegir:\n1--Emperador 650$\n2--Renegado 450$\n3--Defensor 850$\n4--Arquera 700$\n O ingrrese 0 para salir."))
-} */
+} 
  
 
 /* Seleccionando atuendos */
-/* for(let i = 0; i < 8; i++){
+ for(let i = 0; i < 8; i++){
     if(agregarAlCarrito == 0){
         break;
     }else if(agregarAlCarrito == 1){
@@ -134,20 +134,20 @@ let agregarAlCarrito;
         agregarAlCarrito=parseInt(prompt("Elegiste el atuendo (Arquera).\nIngresa el numero correspondiente al atuendo que quiere elegir:\n1--Emperador\n2--Renegado\n3--Defensor\n4--Arquera\n O ingrrese 0 para salir."))
         
     }
-} */
+} 
 
 /* Mostrando atuendos y su valor */
-/* function totalAtuendos (){
+ function totalAtuendos (){
     let total=0;
     carritoAtuendos.forEach(atuendos => {
         total += atuendos.precio;
     });
     return total
-} */
+} 
 
 
 
-/* let atuendosInformacion = "Productos en el carrito:\n";
+ let atuendosInformacion = "Productos en el carrito:\n";
 carritoAtuendos.forEach(atuendos => {
     atuendosInformacion +=  `${atuendos.nombre} - $${atuendos.precio}\n`
 });
@@ -155,7 +155,7 @@ alert(atuendosInformacion);
 
   const calcularTotal= totalAtuendos ();
 alert(`El total del carrito es: $${calcularTotal}`) 
- */
+ 
 
 
 /* Valoraciones */
