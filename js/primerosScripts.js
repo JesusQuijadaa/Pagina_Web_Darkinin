@@ -64,27 +64,110 @@ for(let i= 0; i <200; i++){
         alert("Hasta luego, vuelva pronto.");
         break;
 
+    }else if(historias== 8){
+            alert("Te redireccionamos a la tienda.");
+            break;
+    
     }else if(continuamos == 1) {
-        alert("Que bueno que decides quedarte, no te arrepentiras. Tenemos varias habilidades sobre Dioses que te pueden interesar.");
+        alert("Que bueno que decides quedarte, no te arrepentiras. Tenemos varias habilidades sobre Dioses que te pueden interesar y atuendos increibles disponibles para comprar.");
 
-        historias=prompt("Elige una de las siguientes opciones:\n 1--Zeus. \n 2--Hades. \n 3--Dionisio. \n --Para salir ingrese 0.");
+        historias=prompt("Elige una de las siguientes opciones:\n 1--Zeus. \n 2--Hades. \n 3--Dionisio. \n --Para ir a la tienda de atuendos ingrese 8, y para salir ingrese 0.");
         
     }
 }
 
-/* Valoraciones */
-let valoracionesDeUsuario;
-function valoraciones(calificacion){
-    alert("Gracias por sus valoraciones "+ usuario);
+/* Molde */
+class Atuendos {
+    constructor(nombre, precio) {
+        this.nombre = nombre;
+        this.precio = precio;
+    }
 }
 
-for(let i=0; i <3; i++){
-    valoracionesDeUsuario= prompt("Calificanos del 1 al 10.\nSiendo 1, la valoracion mas baja y 10 la valoracion mas alta");
-    valoraciones(usuario);
-    break;
+/* Atuendos */
+const atuendo1 = new Atuendos("Emperador", 650);
+const atuendo2 = new Atuendos("Renegado", 450);
+const atuendo3 = new Atuendos("Defensor",850);
+const atuendo4 = new Atuendos("Arquera", 700);
+
+
+/* Atuendos agregados */
+const carritoAtuendos = [];
+
+/* Agregando al carrito */
+function agregarAtuendos(atuendos){
+    carritoAtuendos.push(atuendos);
 }
+
+let agregarAlCarrito;
+
+if(historias != 0){
+    agregarAlCarrito=parseInt(prompt("Ingresa el numero correspondiente al atuendo que quiere elegir:\n1--Emperador 650$\n2--Renegado 450$\n3--Defensor 850$\n4--Arquera 700$\n O ingrrese 0 para salir."))
+}
+ 
+
+/* Seleccionando atuendos */
+for(let i = 0; i < 8; i++){
+    if(agregarAlCarrito == 0){
+        break;
+    }else if(agregarAlCarrito == 1){
+        agregarAtuendos(atuendo1);
         
-    
+        agregarAlCarrito=parseInt(prompt("Elegiste el atuendo (Emperador).\nIngresa el numero correspondiente al atuendo que quiere elegir:\n1--Emperador\n2--Renegado\n3--Defensor\n4--Arquera\n O ingrrese 0 para salir."))
+       
+
+    }else if(agregarAlCarrito == 2){
+        agregarAtuendos(atuendo2);
         
-    
-    
+        agregarAlCarrito=parseInt(prompt("Elegiste el atuendo (Renegado).\nIngresa el numero correspondiente al atuendo que quiere elegir:\n1--Emperador\n2--Renegado\n3--Defensor\n4--Arquera\n O ingrrese 0 para salir."))
+        
+
+    }else if(agregarAlCarrito == 3){
+        agregarAtuendos(atuendo3);
+        
+        agregarAlCarrito=parseInt(prompt("Elegiste el atuendo (Defensor).\nIngresa el numero correspondiente al atuendo que quiere elegir:\n1--Emperador\n2--Renegado\n3--Defensor\n4--Arquera\n O ingrrese 0 para salir."))
+        
+
+    }else if(agregarAlCarrito == 4){
+        agregarAtuendos(atuendo4);
+        
+        agregarAlCarrito=parseInt(prompt("Elegiste el atuendo (Arquera).\nIngresa el numero correspondiente al atuendo que quiere elegir:\n1--Emperador\n2--Renegado\n3--Defensor\n4--Arquera\n O ingrrese 0 para salir."))
+        
+    }
+}
+
+/* Mostrando atuendos y su valor */
+function totalAtuendos (){
+    let total=0;
+    carritoAtuendos.forEach(atuendos => {
+        total += atuendos.precio;
+    });
+    return total
+}
+
+
+
+let atuendosInformacion = "Productos en el carrito:\n";
+carritoAtuendos.forEach(atuendos => {
+    atuendosInformacion +=  `${atuendos.nombre} - $${atuendos.precio}\n`
+});
+alert(atuendosInformacion);
+
+  const calcularTotal= totalAtuendos ();
+alert(`El total del carrito es: $${calcularTotal}`) 
+
+
+
+/* Valoraciones */
+ 
+function valoraciones(calificacion){
+    alert("Gracias por su calificacion de " + calificacion +", ahora chequearemos su valoracion y vemos en que podemos mejorar")
+}
+
+for(let i = 0; i <1; i++){
+    let valoracionesDeUsuario = prompt("Valore");
+    valoraciones(valoracionesDeUsuario);
+    break;
+
+}
+
